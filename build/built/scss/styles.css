@@ -23,3 +23,45 @@
 .navbar-custom .navbar-toggler {
   padding: 0
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.page{
+  padding: 5%;
+}
+
+.pic_headings{
+  font-size: 20px;
+  line-height: 20px;
+}
+
+h1 {
+  font-family: "Roboto Condensed"
+}
+
+p{
+  font-size: 13px;
+  line-height: 18px;
+  font-family: Arial;
+}
+
+.section_title {
+  color: rgba(3,3,3,.4);
+  font-size: 15px;
+  font-family: "Roboto Condensed";
+}
+
+.pic_txt {
+  background-color: rgba(255,255,255,.9);
+  color:  #f72210;
+  margin-bottom: 0;
+  width: 95px;
+  height: 33px;
+  font-family: "Roboto Condensed";
+  font-size: 17px;
+  /*padding-top: 10px;
+  padding-left: 17px;*/
+}

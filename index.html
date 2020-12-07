@@ -11,9 +11,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-light ">
   <nav class="navbar navbar-expand-lg navbar-custom  navbar-dark">
     <a class="navbar-brand logo" href="#"><span>Newsweek</span></a>
     <div>
@@ -53,13 +55,30 @@
       </form>
     </div>
   </nav>
-  <aside class="featured"></aside>
+
+  <div class="page">
+
   <aside class="opinion">
     <section class="debate"></section>
     <section class="sponsored"></section>
   </aside>
   <main>
-    <section class="top-story"></section>
+    
+    <section class="top-story d-flex flex-column bg-white">
+      <h2 class="section_title"> TOY STORY </h2>
+      <div class="position-relative">
+        <span class="fixed-bottom position-absolute text-center align-middle pic_txt"> POLITICS </span>
+        <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+      </div>
+      <h1 class="pic_headings"> Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data </h1>
+      <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+  </section>
+
+  <aside class="featured">
+    <h2 class="section_title"> FEATURED STORIES </h2>
+
+  </aside>
+
     <section class="my-turn"></section>
     <section class="culture"></section>
     <section class="more"></section>
@@ -73,6 +92,7 @@
   <section class="culture"></section>
   <section class="sports"></section>
   <section class="subscribe"></section>
+  </div>
   <footer>
     <div class="social"></div>
     <div class="editions"></div>

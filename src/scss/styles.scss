@@ -16,7 +16,7 @@ $button-color: #ffe400;
   }
 
   .navbar-subscribe {
-    background-color: #ffe400;
+    background-color: $button-color;
     border-radius: 24px;
     color: black;
     font-size: 13px;
@@ -31,3 +31,4 @@ $button-color: #ffe400;
     padding: 0;
   }
 }
+
