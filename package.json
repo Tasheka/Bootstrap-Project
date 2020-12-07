@@ -1,18 +1,17 @@
 {
-  "name": "project-template",
+  "name": "bootstrap-project",
   "version": "0.0.0",
-  "description": "Template for HTML/CSS/JS (frontend) projects.",
+  "description": "Bootsrap project",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NoTengoBattery/html-css-template.git"
+    "url": "git+https://github.com/Tasheka/Bootstrap-Project.git"
   },
-  "author": "Oever González (NoTengoBattery)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NoTengoBattery/html-css-template/issues"
+    "url": "https://github.com/Tasheka/Bootstrap-Project/issues"
   },
-  "homepage": "https://github.com/NoTengoBattery/html-css-template#readme",
+  "homepage": "https://github.com/Tasheka/Bootstrap-Project#readme",
   "devDependencies": {
     "@lhci/cli": "*",
     "@popperjs/core": "*",
