@@ -1,0 +1,25 @@
+.navbar-custom {
+  background-color: #f72210
+}
+.navbar-custom a.logo {
+  font-family: Kadwa,serif;
+  font-size: 25px;
+  margin-right: 0;
+  height: 50px
+}
+.navbar-custom a.logo span {
+  color: #fff
+}
+.navbar-custom .navbar-subscribe {
+  background-color: #ffe400;
+  border-radius: 24px;
+  color: #000;
+  font-size: 13px;
+  border: none
+}
+.navbar-custom .navbar-user-icon {
+  color: rgba(255,255,255,.5)
+}
+.navbar-custom .navbar-toggler {
+  padding: 0
+}

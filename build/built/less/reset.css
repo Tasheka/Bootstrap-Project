@@ -1,5 +1,17 @@
+a,
+aside,
 body,
-html {
+div,
+footer,
+form,
+html,
+i,
+li,
+main,
+nav,
+section,
+span,
+ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,6 +19,16 @@ html {
   font: inherit;
   vertical-align: baseline
 }
+aside,
+footer,
+main,
+nav,
+section {
+  display: block
+}
 body {
   line-height: 1
+}
+ul {
+  list-style: none
 }
