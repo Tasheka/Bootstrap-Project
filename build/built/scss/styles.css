@@ -13,6 +13,12 @@ img {
   font: bold 28px/0 Kadwa,serif;
   letter-spacing: -3px
 }
+.news-logo {
+  background-color: #f72210;
+  width: 29px;
+  height: 28px;
+  margin-right: 5%
+}
 .navb {
   background-color: #f72210;
   height: 50px
@@ -158,12 +164,6 @@ img {
   line-height: 20px;
   padding: 3px 6px
 }
-.page .my-turn .subscribe-logo {
-  background-color: #f72210;
-  width: 29px;
-  height: 28px;
-  margin-right: 5%
-}
 .page .my-turn .subscribe-txt {
   font: bold 19px/19px "Roboto Condensed",sans-serif
 }
@@ -184,4 +184,51 @@ img {
   border: 1px solid #e2e2e2;
   background-color: #f4f5f6;
   padding: 20px
+}
+.page .magazine-title {
+  font: bold 19px/19px "Roboto Condensed",sans-serif;
+  margin: 0
+}
+.page .magazine img {
+  height: auto;
+  width: 100%;
+  margin-top: 20px
+}
+.page .see-all {
+  font: bold 18px/18px "Roboto Condensed",sans-serif;
+  background: #e2e2e2;
+  padding: 10px;
+  text-align: center
+}
+.page .magazine {
+  padding-bottom: 0
+}
+.page .extra-content {
+  padding-top: 20px
+}
+.page .extra-content .bar-magazine {
+  font: bold 16px/26px "Roboto Condensed",sans-serif;
+  margin-top: 12px;
+  margin-bottom: 10px
+}
+.page .extra-content .bar-magazine span {
+  padding: 4px 7px
+}
+.page .extra-content .bar-magazine .bar-txt2 {
+  color: #f72210
+}
+.page .extra-content h5 {
+  font: 16px/16px "Roboto Condensed",sans-serif
+}
+.page .extra-content .extra-text-different {
+  padding-top: 10px;
+  padding-bottom: 20px
+}
+.page .extra-content .bar-txt1 {
+  background-color: #f72210;
+  color: #fff;
+  margin-right: 7px
+}
+.page .extra-content .extra-different {
+  margin-bottom: 8px
 }

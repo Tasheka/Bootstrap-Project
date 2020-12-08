@@ -40,6 +40,13 @@ img {
   letter-spacing: -3px;
 }
 
+.news-logo {
+  background-color: $main-color;
+  width: 29px;
+  height: 28px;
+  margin-right: 5%;
+}
+
 .navb {
   background-color: $main-color;
   height: 50px;
@@ -259,18 +266,11 @@ img {
       }
     }
 
-    .subscribe-logo {
-      background-color: $main-color;
-      width: 29px;
-      height: 28px;
-      margin-right: 5%;
-    }
-
     .subscribe-txt {
       @include roboto(bold, 19px, 19px);
     }
 
-    .sub-button{
+    .sub-button {
       background-color: $main-color;
       color: white;
       font-weight: bold;
@@ -280,15 +280,81 @@ img {
       border: $main-color;
     }
 
-    .txt-box{
+    .txt-box {
       border: $border;
-      height:30px;
+      height: 30px;
     }
 
     .sub-form {
       border: $border;
       background-color: #f4f5f6;
       padding: 20px;
+    }
+  }
+
+  .magazine-title {
+    @include roboto(bold, 19px, 19px);
+    margin: 0;
+  }
+
+  .magazine {
+    img {
+      height: auto;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  .see-all {
+    @include roboto(bold, 18px, 18px);
+    background: $soft-gray;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .magazine {
+    padding-bottom: 0;
+  }
+
+  .extra-content {
+    padding-top: 20px;
+
+    .bar-magazine {
+      @include roboto(bold, 16px, 26px);
+
+      margin: {
+        top: 12px;
+        bottom: 10px;
+      }
+
+      span {
+        padding: 4px 7px;
+      }
+
+      .bar-txt2 {
+        color: $main-color;
+      }
+    }
+
+    h5 {
+      @include roboto(normal, 16px, 16px);
+    }
+
+    .extra-text-different {
+      padding: {
+        top: 10px;
+        bottom: 20px;
+      }
+    }
+
+    .bar-txt1 {
+      background-color: $main-color;
+      color: white;
+      margin-right: 7px;
+    }
+
+    .extra-different {
+      margin-bottom: 8px;
     }
   }
 }
