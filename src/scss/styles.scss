@@ -126,4 +126,26 @@ img {
       }
     }
   }
+
+  .opinion{
+    .opinion-img {
+      width: 63px;
+      height: 63px;
+    }
+
+    .opinion-txt {
+      color: black;
+      @include roboto(bold, 17px, 21px);
+    }
+    
+    .opinion-txt-2 {
+      color: #555;
+      @include roboto(bold, 14px, 21px);
+    }
+
+    .debate {
+      @extend aside;
+    }
+
+  }
 }

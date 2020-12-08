@@ -28,6 +28,8 @@ img {
 .navb .toggler {
   opacity: .75
 }
+.page .opinion main .debate,
+.page main .opinion .debate,
 .page main aside {
   border-bottom: 1px solid #e2e2e2;
   margin-top: 18px;
@@ -35,18 +37,30 @@ img {
   padding-left: 15px;
   padding-top: 20px
 }
+.page .opinion main .debate .featured,
+.page .opinion main .debate .top-story,
+.page main .opinion .debate .featured,
+.page main .opinion .debate .top-story,
 .page main aside .featured,
 .page main aside .top-story {
   padding-bottom: 20px
 }
+.page .opinion main .debate .featured > *,
+.page .opinion main .debate .top-story > *,
+.page main .opinion .debate .featured > *,
+.page main .opinion .debate .top-story > *,
 .page main aside .featured > *,
 .page main aside .top-story > * {
   margin-bottom: 10px
 }
+.page .opinion main .debate .block-title,
+.page main .opinion .debate .block-title,
 .page main aside .block-title {
   font: bold 16px/16px "Roboto Condensed",sans-serif;
   color: rgba(3,3,3,.4)
 }
+.page .opinion main .debate .picture-text,
+.page main .opinion .debate .picture-text,
 .page main aside .picture-text {
   font: bold 17px/16px "Roboto Condensed",sans-serif;
   background-color: rgba(255,255,255,.9);
@@ -60,6 +74,20 @@ img {
   z-index: 0;
   padding: 10px 10px 5px
 }
+.page .opinion main .debate .picture-title,
+.page main .opinion .debate .picture-title,
 .page main aside .picture-title {
   font: bold 22px/24px "Roboto Condensed",sans-serif
+}
+.page .opinion .opinion-img {
+  width: 63px;
+  height: 63px
+}
+.page .opinion .opinion-txt {
+  color: #000;
+  font: bold 17px/21px "Roboto Condensed",sans-serif
+}
+.page .opinion .opinion-txt-2 {
+  color: #555;
+  font: bold 14px/21px "Roboto Condensed",sans-serif
 }
