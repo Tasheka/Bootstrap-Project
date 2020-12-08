@@ -73,6 +73,7 @@ img {
   padding: 20px;
   border: 1px solid #e2e2e2
 }
+.page .more .more-img,
 .page .more .opinion-img,
 .page .opinion .opinion-img {
   width: 63px;
@@ -80,6 +81,7 @@ img {
   margin-right: 15px;
   margin-bottom: 10px
 }
+.page .more .more-txt,
 .page .more .opinion-txt,
 .page .opinion .opinion-txt {
   color: #000;
@@ -124,19 +126,36 @@ img {
   border-radius: 50%
 }
 .page .more {
-  height: auto;
-  width: 100%;
-  border-top: 1px solid #e2e2e2
+  border-top: 1px solid #e2e2e2;
+  padding-top: 20px
 }
-.page .more .opinion-img {
+.page .more .more-img {
   width: 95px;
-  height: 95px
+  height: 95px;
+  float: left
 }
 .page .more .more-txt-2 {
-  font-family: Arial;
-  font-size: 13px;
-  line-height: 18px
+  font: 13px/18px Arial,Helvetica,sans-serif;
+  margin-top: 10px
 }
-.page .more .more-txt {
-  margin-bottom: 2%
+.page .my-turn .turn img {
+  height: 290px;
+  width: 290px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+  margin-top: 10px
+}
+.page .my-turn .turn p {
+  font: bold 16px/19px "Roboto Condensed",sans-serif;
+  color: rgba(3,3,3,.4);
+  margin-bottom: 25px;
+  padding-top: 15px
+}
+.page .my-turn .turn .picture-text {
+  color: #000;
+  background-color: #c2d4d7;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 3px 6px
 }

@@ -7,6 +7,7 @@ $soft-gray-tone2: #d6d6d6;
 $icons-opacity: 0.75;
 $border: 1px solid $soft-gray;
 $debate-border: 4px solid $soft-gray;
+$gray-tone3: #c2d4d7;
 
 @mixin arial($st, $fs, $lh) {
   font: #{$st} #{$fs}/#{$lh} Arial, Helvetica, sans-serif;
@@ -143,83 +144,120 @@ img {
     }
   }
 
-.opinion {
-  .opinion-img {
-    width: 63px;
-    height: 63px;
+  .opinion {
+    .opinion-img {
+      width: 63px;
+      height: 63px;
 
-    margin: {
-      right: 15px;
-      bottom: 10px;
+      margin: {
+        right: 15px;
+        bottom: 10px;
+      }
+    }
+
+    .opinion-txt {
+      color: black;
+      @include roboto(bold, 17px, 21px);
+    }
+
+    .opinion-txt-2 {
+      color: #555;
+      @include roboto(bold, 14px, 21px);
+    }
+
+    .debate {
+      margin-top: 10px;
+      border-bottom: $border;
+    }
+
+    .debate-top {
+      border-top: $debate-border;
+      padding-top: 10px;
+      border-bottom: 2px double $soft-gray;
+    }
+
+    .debate-bottom {
+      border-bottom: $debate-border;
+      margin-bottom: 30px;
+      margin-top: 26px;
+    }
+
+    .vs-line {
+      border: {
+        top: $border;
+        bottom: $border;
+      }
+
+      height: 3px;
+
+      .vs-container {
+        left: 46%;
+        width: 32px;
+        height: 32px;
+        top: -16px;
+        background-color: black;
+        color: $soft-gray-tone2;
+        border-radius: 50%;
+      }
     }
   }
 
-  .opinion-txt {
-    color: black;
-    @include roboto(bold, 17px, 21px);
-  }
+  .more {
+    @extend .opinion;
+    border-top: $border;
+    padding-top: 20px;
 
-  .opinion-txt-2 {
-    color: #555;
-    @include roboto(bold, 14px, 21px);
-  }
-
-  .debate {
-    margin-top: 10px;
-    border-bottom: $border;
-  }
-
-  .debate-top {
-    border-top: $debate-border;
-    padding-top: 10px;
-    border-bottom: 2px double $soft-gray;
-  }
-
-  .debate-bottom {
-    border-bottom: $debate-border;
-    margin-bottom: 30px;
-    margin-top: 26px;
-  }
-
-  .vs-line {
-    border: {
-      top: $border;
-      bottom: $border;
+    .more-img {
+      @extend .opinion-img;
+      width: 95px;
+      height: 95px;
+      float: left;
     }
 
-    height: 3px;
+    .more-txt-2 {
+      @include arial(normal, 13px, 18px);
+      margin-top: 10px;
+    }
 
-    .vs-container {
-      left: 46%;
-      width: 32px;
-      height: 32px;
-      top: -16px;
-      background-color: black;
-      color: $soft-gray-tone2;
-      border-radius: 50%;
+    .more-txt {
+      @extend .opinion-txt;
     }
   }
-}
 
-.more{
-  @extend .opinion;
-  height: auto;
-  width: 100%;
-  border-top: $border;
+  .my-turn {
+    .turn {
+      img {
+        height: 290px;
+        width: 290px;
+        object-fit: cover;
 
-  .opinion-img{
-    width: 95px;
-    height:95px;
+        margin: {
+          bottom: 10px;
+          top: 10px;
+        }
+      }
+
+      p {
+        @include roboto(bold, 16px, 19px);
+        color: $transparent-gray;
+        margin-bottom: 25px;
+        padding-top: 15px;
+      }
+
+      .picture-text {
+        color: black;
+        background-color: $gray-tone3;
+        padding-top: 10px;
+        font-size: 13px;
+        line-height: 20px;
+
+        padding: {
+          right: 6px;
+          left: 6px;
+          top: 3px;
+          bottom: 3px;
+        }
+      }
+    }
   }
-
-  .more-txt-2 {
-    font-family: Arial;
-    font-size: 13px;
-    line-height: 18px;
-  }
-
-  .more-txt{
-    margin-bottom: 2%;
-  }
-}
 }
