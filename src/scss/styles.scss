@@ -142,7 +142,6 @@ img {
       }
     }
   }
-}
 
 .opinion {
   .opinion-img {
@@ -200,4 +199,27 @@ img {
       border-radius: 50%;
     }
   }
+}
+
+.more{
+  @extend .opinion;
+  height: auto;
+  width: 100%;
+  border-top: $border;
+
+  .opinion-img{
+    width: 95px;
+    height:95px;
+  }
+
+  .more-txt-2 {
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .more-txt{
+    margin-bottom: 2%;
+  }
+}
 }

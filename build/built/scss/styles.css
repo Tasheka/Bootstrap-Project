@@ -73,40 +73,48 @@ img {
   padding: 20px;
   border: 1px solid #e2e2e2
 }
-.opinion .opinion-img {
+.page .more .opinion-img,
+.page .opinion .opinion-img {
   width: 63px;
   height: 63px;
   margin-right: 15px;
   margin-bottom: 10px
 }
-.opinion .opinion-txt {
+.page .more .opinion-txt,
+.page .opinion .opinion-txt {
   color: #000;
   font: bold 17px/21px "Roboto Condensed",sans-serif
 }
-.opinion .opinion-txt-2 {
+.page .more .opinion-txt-2,
+.page .opinion .opinion-txt-2 {
   color: #555;
   font: bold 14px/21px "Roboto Condensed",sans-serif
 }
-.opinion .debate {
+.page .more .debate,
+.page .opinion .debate {
   margin-top: 10px;
   border-bottom: 1px solid #e2e2e2
 }
-.opinion .debate-top {
+.page .more .debate-top,
+.page .opinion .debate-top {
   border-top: 4px solid #e2e2e2;
   padding-top: 10px;
   border-bottom: 2px double #e2e2e2
 }
-.opinion .debate-bottom {
+.page .more .debate-bottom,
+.page .opinion .debate-bottom {
   border-bottom: 4px solid #e2e2e2;
   margin-bottom: 30px;
   margin-top: 26px
 }
-.opinion .vs-line {
+.page .more .vs-line,
+.page .opinion .vs-line {
   border-top: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
   height: 3px
 }
-.opinion .vs-line .vs-container {
+.page .more .vs-line .vs-container,
+.page .opinion .vs-line .vs-container {
   left: 46%;
   width: 32px;
   height: 32px;
@@ -114,4 +122,21 @@ img {
   background-color: #000;
   color: #d6d6d6;
   border-radius: 50%
+}
+.page .more {
+  height: auto;
+  width: 100%;
+  border-top: 1px solid #e2e2e2
+}
+.page .more .opinion-img {
+  width: 95px;
+  height: 95px
+}
+.page .more .more-txt-2 {
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 18px
+}
+.page .more .more-txt {
+  margin-bottom: 2%
 }
