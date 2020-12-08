@@ -78,12 +78,12 @@ img {
   font: bold 14px/21px "Roboto Condensed",sans-serif
 }
 .opinion .debate {
-  border-bottom: 2px double #e2e2e2;
   margin-top: 10px
 }
 .opinion .debate-top {
   border-top: 6px solid #e2e2e2;
-  padding-top: 10px
+  padding-top: 10px;
+  border-bottom: 2px double #e2e2e2
 }
 .opinion .debate-bottom {
   border-bottom: 6px solid #e2e2e2;

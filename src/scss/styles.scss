@@ -148,13 +148,13 @@ img {
     }
 
     .debate {
-      border-bottom: 2px double $soft-gray;
       margin-top: 10px;
     }
 
     .debate-top{
       border-top: 6px solid $soft-gray;
       padding-top: 10px;
+      border-bottom: 2px double $soft-gray;
     }
 
     .debate-bottom{
