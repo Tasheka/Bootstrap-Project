@@ -6,27 +6,23 @@
   <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="build/built/less/reset.css">
-  <link rel="stylesheet" href="build/built/scss/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="build/built/scss/styles.css">
 </head>
 
-<body class="bg-light ">
-  <nav class="navbar navbar-expand-lg navbar-custom  navbar-dark">
-    <a class="navbar-brand logo" href="#"><span>Newsweek</span></a>
-    <div>
-      <a class="navbar-user-icon" href="#"><i class="fas fa-user"></i></a>
-      <button class="navbar-subscribe">SUSBCRIBE ></button>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<body class="bg-light">
+  <nav class="navbar sticky-top navbar-expand-lg pb-0 pt-0 navb">
+    <a class="navbar-brand m-0 text-white logo" href="#">Newsweek</a>
+    <a class="text-white user" href="#"><i class="fas fa-user"></i></a>
+    <button class="subs">SUSBCRIBE ></button>
+    <button class="navbar-toggler text-white pr-0 pl-0 toggler" type="button" data-toggle="collapse" data-target="#menu-content" aria-controls="menu-content" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="menu-content">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -57,41 +53,54 @@
   </nav>
 
   <div class="page">
-
-  <aside class="opinion">
-    <section class="debate"></section>
-    <section class="sponsored"></section>
-  </aside>
-  <main>
-    
-    <section class="top-story d-flex flex-column bg-white">
-      <h2 class="section_title"> TOY STORY </h2>
-      <div class="position-relative">
-        <span class="fixed-bottom position-absolute text-center align-middle pic_txt"> POLITICS </span>
-        <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
-      </div>
-      <h1 class="pic_headings"> Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data </h1>
-      <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
-  </section>
-
-  <aside class="featured">
-    <h2 class="section_title"> FEATURED STORIES </h2>
-
-  </aside>
-
-    <section class="my-turn"></section>
+    <aside class="opinion">
+      <section class="debate"></section>
+      <section class="sponsored"></section>
+    </aside>
+    <main>
+      <aside class="bg-white mt-0">
+        <h2 class="block-title">TOP STORY</h2>
+        <section class="d-flex flex-column top-story">
+          <div class="position-relative">
+            <div class="fixed-bottom position-absolute picture-text">POLITICS</div>
+            <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+          </div>
+          <h1 class="picture-title"> Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data </h1>
+          <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+        </section>
+      </aside>
+      <aside class="bg-white">
+        <h2 class="block-title">TOP STORY</h2>
+        <section class="d-flex flex-column featured">
+          <div class="position-relative">
+            <div class="fixed-bottom position-absolute picture-text">POLITICS</div>
+            <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+          </div>
+          <h1 class="picture-title"> Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data </h1>
+          <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+        </section>
+        <section class="d-flex flex-column featured">
+          <div class="position-relative">
+            <div class="fixed-bottom position-absolute picture-text">POLITICS</div>
+            <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+          </div>
+          <h1 class="picture-title"> Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data </h1>
+          <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+        </section>
+      </aside>
+      <section class="my-turn"></section>
+      <section class="culture"></section>
+      <section class="more"></section>
+    </main>
+    <section class="magazine"></section>
+    <section class="editors-pick"></section>
+    <section class="us"></section>
+    <section class="world"></section>
+    <section class="business"></section>
+    <section class="tech"></section>
     <section class="culture"></section>
-    <section class="more"></section>
-  </main>
-  <section class="magazine"></section>
-  <section class="editors-pick"></section>
-  <section class="us"></section>
-  <section class="world"></section>
-  <section class="business"></section>
-  <section class="tech"></section>
-  <section class="culture"></section>
-  <section class="sports"></section>
-  <section class="subscribe"></section>
+    <section class="sports"></section>
+    <section class="subscribe"></section>
   </div>
   <footer>
     <div class="social"></div>
