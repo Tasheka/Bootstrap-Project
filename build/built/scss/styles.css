@@ -232,3 +232,8 @@ img {
 .page .extra-content .extra-different {
   margin-bottom: 8px
 }
+.page .editor-title {
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 15px;
+  padding-bottom: 15px
+}
