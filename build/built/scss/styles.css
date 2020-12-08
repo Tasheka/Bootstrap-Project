@@ -131,8 +131,7 @@ img {
 }
 .page .more .more-img {
   width: 95px;
-  height: 95px;
-  float: left
+  height: 95px
 }
 .page .more .more-txt-2 {
   font: 13px/18px Arial,Helvetica,sans-serif;
@@ -158,4 +157,31 @@ img {
   font-size: 13px;
   line-height: 20px;
   padding: 3px 6px
+}
+.page .my-turn .subscribe-logo {
+  background-color: #f72210;
+  width: 29px;
+  height: 28px;
+  margin-right: 5%
+}
+.page .my-turn .subscribe-txt {
+  font: bold 19px/19px "Roboto Condensed",sans-serif
+}
+.page .my-turn .sub-button {
+  background-color: #f72210;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 3px;
+  height: 32px;
+  margin-top: 2%;
+  border: #f72210
+}
+.page .my-turn .txt-box {
+  border: 1px solid #e2e2e2;
+  height: 30px
+}
+.page .my-turn .sub-form {
+  border: 1px solid #e2e2e2;
+  background-color: #f4f5f6;
+  padding: 20px
 }

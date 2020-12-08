@@ -211,7 +211,6 @@ img {
       @extend .opinion-img;
       width: 95px;
       height: 95px;
-      float: left;
     }
 
     .more-txt-2 {
@@ -258,6 +257,38 @@ img {
           bottom: 3px;
         }
       }
+    }
+
+    .subscribe-logo {
+      background-color: $main-color;
+      width: 29px;
+      height: 28px;
+      margin-right: 5%;
+    }
+
+    .subscribe-txt {
+      @include roboto(bold, 19px, 19px);
+    }
+
+    .sub-button{
+      background-color: $main-color;
+      color: white;
+      font-weight: bold;
+      border-radius: 3px;
+      height: 32px;
+      margin-top: 2%;
+      border: $main-color;
+    }
+
+    .txt-box{
+      border: $border;
+      height:30px;
+    }
+
+    .sub-form {
+      border: $border;
+      background-color: #f4f5f6;
+      padding: 20px;
     }
   }
 }
