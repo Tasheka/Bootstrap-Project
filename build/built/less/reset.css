@@ -12,12 +12,15 @@ h2,
 html,
 i,
 img,
+li,
 main,
+menu,
 nav,
 p,
 s,
 section,
-span {
+span,
+ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -30,10 +33,15 @@ figcaption,
 figure,
 footer,
 main,
+menu,
 nav,
 section {
   display: block
 }
 body {
   line-height: 1
+}
+menu,
+ul {
+  list-style: none
 }

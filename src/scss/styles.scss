@@ -5,12 +5,13 @@ $button-color: #ffe400;
 $transparent-gray: rgba(3, 3, 3, 0.4);
 $soft-gray: #e2e2e2;
 $soft-gray-tone2: #d6d6d6;
-$soft-gray-tone3: #555555;
-$gray: #333333;
+$soft-gray-tone3: #555;
+$gray: #333;
 $icons-opacity: 0.75;
 $border: 1px solid $soft-gray;
 $debate-border: 4px solid $soft-gray;
 $gray-tone3: #c2d4d7;
+$gray-tone4: #666;
 
 @mixin arial($st, $fs, $lh) {
   font: #{$st} #{$fs}/#{$lh} Arial, Helvetica, sans-serif;
@@ -38,13 +39,18 @@ img {
 
   letter-spacing: -3px;
 
-
   &-simple {
     background-color: $main-color;
     width: 29px;
     height: 28px;
     margin-right: 5%;
   }
+}
+
+.transform-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .navb {
@@ -130,6 +136,12 @@ img {
   }
 
   .debate {
+    h1 {
+      @include roboto(bold, 17px, 21px);
+
+      color: black;
+    }
+
     section {
       padding: {
         top: 10px;
@@ -152,14 +164,6 @@ img {
           left: 0;
         }
       }
-
-      h1 {
-        color: black;
-      }
-    }
-
-    h1 {
-      @include roboto(bold, 17px, 21px);
     }
 
     h2 {
@@ -184,14 +188,12 @@ img {
       }
 
       div {
-        left: 50%;
-        top: 50%;
+        @extend .transform-center;
         width: 32px;
         height: 32px;
         background-color: black;
         color: $soft-gray-tone2;
         border-radius: 50%;
-        transform: translate(-50%, -50%);
       }
     }
 
@@ -296,7 +298,6 @@ img {
       border: $border;
       background-color: $soft-gray;
       padding: 20px;
-      max-width: 280px;
 
       margin: {
         bottom: 30px;
@@ -311,7 +312,8 @@ img {
 
       &-box {
         border: $border;
-        height: 30px;
+        height: 32px;
+        width: 100%;
       }
 
       &-button {
@@ -320,9 +322,14 @@ img {
         font-weight: bold;
         border-radius: 3px;
         height: 32px;
-        margin-top: 2%;
         border: $main-color;
+        white-space: nowrap;
+        width: 100%;
       }
+    }
+
+    .max-form {
+      max-width: 300px;
     }
   }
 
@@ -383,33 +390,123 @@ img {
     }
   }
 
-  .editor-title {
-    border-bottom: $border;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-  }
-
   .subscribe-block {
-    .block-title {
+    h1 {
       color: red;
     }
 
-    .subscribe-content {
+    // Please note that, in the original page, this image and it's
+    // container is not responsive, is fixed size.
+    &-content {
+      @extend .my-turn;
       background-color: $soft-gray;
+      padding: 24px;
     }
 
-    .subscribe-images {
+    &-images {
       height: 227px;
-      margin: 0 auto;
+      margin-bottom: 10px;
+
+      div {
+        height: inherit;
+        width: 170px;
+      }
 
       img {
         width: auto;
         height: 100%;
       }
+    }
 
-      .subscribe-image1 {
-        top: 10px;
+    &-image1 {
+      @extend .transform-center;
+      transform: translate(-70%, -50%);
+    }
+
+    &-image2 {
+      @extend .transform-center;
+      transform: translate(-30%, -45%);
+    }
+
+    p {
+      @include arial(300, 15px, 21px);
+    }
+  }
+
+  .newsletter {
+    @extend .sponsored;
+    @extend .subscribe-block;
+
+    section {
+      @extend .my-turn;
+    }
+
+    .info {
+      h2 {
+        @include roboto(bold, 22px, 24px);
       }
     }
+  }
+}
+
+footer {
+  background-color: white;
+  margin-top: 20px;
+  color: $gray-tone4;
+
+  div > * {
+    padding-bottom: 10px;
+  }
+
+  padding: {
+    top: 48px;
+    right: 15px;
+    bottom: 30px;
+    left: 15px;
+  }
+
+  .social {
+    border-bottom: $border;
+
+    .logo {
+      color: $main-color;
+      font-size: 46px;
+    }
+
+    .copyright {
+      @include arial(normal, 12px, 12px);
+    }
+
+    .media-icons {
+      font-size: 26px;
+    }
+  }
+
+  .editions {
+    @include arial(normal, 14px, 15px);
+
+    span {
+      margin: {
+        top: 6px;
+        right: 15px;
+      }
+    }
+
+    ul {
+      border: 0;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        padding-right: 18px;
+        margin: 6px 0;
+        list-style: none outside none;
+      }
+    }
+  }
+
+  .about {
+    @extend .editions;
   }
 }

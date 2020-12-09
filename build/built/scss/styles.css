@@ -15,6 +15,13 @@ img {
   height: 28px;
   margin-right: 5%
 }
+.page .debate-vs div,
+.page .subscribe-block-image1,
+.page .subscribe-block-image2 {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%)
+}
 .navb {
   background-color: #f72210;
   height: 50px
@@ -70,6 +77,12 @@ img {
 .page aside section h2 {
   font: bold 22px/24px "Roboto Condensed",sans-serif
 }
+.page .debate h1,
+.page .more-stories h1,
+.page .opinion h1 {
+  font: bold 17px/21px "Roboto Condensed",sans-serif;
+  color: #000
+}
 .page .debate section,
 .page .more-stories section,
 .page .opinion section {
@@ -89,16 +102,6 @@ img {
   height: 63px;
   margin: 0 15px 0 0
 }
-.page .debate section h1,
-.page .more-stories section h1,
-.page .opinion section h1 {
-  color: #000
-}
-.page .debate h1,
-.page .more-stories h1,
-.page .opinion h1 {
-  font: bold 17px/21px "Roboto Condensed",sans-serif
-}
 .page .debate h2,
 .page .more-stories h2,
 .page .opinion h2 {
@@ -112,14 +115,11 @@ img {
   margin: 16px 0
 }
 .page .debate-vs div {
-  left: 50%;
-  top: 50%;
   width: 32px;
   height: 32px;
   background-color: #000;
   color: #d6d6d6;
-  border-radius: 50%;
-  transform: translate(-50%,-50%)
+  border-radius: 50%
 }
 .page .debate-top {
   border-top: 4px solid #e2e2e2
@@ -131,21 +131,32 @@ img {
 .page .opinion section {
   border-bottom: 1px solid #e2e2e2
 }
+.page .my-turn .newsletter figure,
 .page .my-turn .sponsored figure,
-.page .sponsored figure {
+.page .newsletter figure,
+.page .newsletter section .sponsored figure,
+.page .sponsored figure,
+.page .subscribe-block-content .sponsored figure {
   margin: 0
 }
+.page .my-turn .newsletter figure figcaption,
 .page .my-turn .sponsored figure figcaption,
-.page .sponsored figure figcaption {
+.page .newsletter figure figcaption,
+.page .newsletter section .sponsored figure figcaption,
+.page .sponsored figure figcaption,
+.page .subscribe-block-content .sponsored figure figcaption {
   color: #3581f4
 }
+.page .newsletter .info,
 .page .sponsored .info {
   padding: 20px;
   border: 1px solid #e2e2e2
 }
+.page .newsletter .info h2,
 .page .sponsored .info h2 {
   font: bold 17px/21px "Roboto Condensed",sans-serif
 }
+.page .newsletter .info p,
 .page .sponsored .info p {
   color: #333
 }
@@ -156,48 +167,70 @@ img {
   width: 95px;
   height: 95px
 }
-.page .my-turn .turn img {
+.page .my-turn .turn img,
+.page .newsletter section .turn img,
+.page .subscribe-block-content .turn img {
   -o-object-fit: cover;
      object-fit: cover
 }
-.page .my-turn .turn figure {
+.page .my-turn .turn figure,
+.page .newsletter section .turn figure,
+.page .subscribe-block-content .turn figure {
   padding-bottom: 10px
 }
-.page .my-turn .turn figure figcaption {
+.page .my-turn .turn figure figcaption,
+.page .newsletter section .turn figure figcaption,
+.page .subscribe-block-content .turn figure figcaption {
   font: bold 13px/20px "Roboto Condensed",sans-serif;
   color: #342;
   background-color: #c2d4d7;
   padding: 0 6px
 }
-.page .my-turn .turn h1 {
+.page .my-turn .turn h1,
+.page .newsletter section .turn h1,
+.page .subscribe-block-content .turn h1 {
   font: bold 16px/19px "Roboto Condensed",sans-serif;
   color: rgba(3,3,3,.4)
 }
-.page .my-turn .subscribe-form {
+.page .my-turn .subscribe-form,
+.page .newsletter section .subscribe-form,
+.page .subscribe-block-content .subscribe-form {
   border: 1px solid #e2e2e2;
   background-color: #e2e2e2;
   padding: 20px;
-  max-width: 280px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto
 }
-.page .my-turn .subscribe-form-txt {
+.page .my-turn .subscribe-form-txt,
+.page .newsletter section .subscribe-form-txt,
+.page .subscribe-block-content .subscribe-form-txt {
   font: bold 19px/19px "Roboto Condensed",sans-serif;
   margin: 0
 }
-.page .my-turn .subscribe-form-box {
+.page .my-turn .subscribe-form-box,
+.page .newsletter section .subscribe-form-box,
+.page .subscribe-block-content .subscribe-form-box {
   border: 1px solid #e2e2e2;
-  height: 30px
+  height: 32px;
+  width: 100%
 }
-.page .my-turn .subscribe-form-button {
+.page .my-turn .subscribe-form-button,
+.page .newsletter section .subscribe-form-button,
+.page .subscribe-block-content .subscribe-form-button {
   background-color: #f72210;
   color: #fff;
   font-weight: 700;
   border-radius: 3px;
   height: 32px;
-  margin-top: 2%;
-  border: #f72210
+  border: #f72210;
+  white-space: nowrap;
+  width: 100%
+}
+.page .my-turn .max-form,
+.page .newsletter section .max-form,
+.page .subscribe-block-content .max-form {
+  max-width: 300px
 }
 .page .magazine figure {
   margin-bottom: 6px
@@ -238,17 +271,80 @@ img {
 .page .lineup img {
   padding-bottom: 5px
 }
-.page .subscribe-block .subscribe-content {
-  background-color: #e2e2e2
+.page .newsletter h1,
+.page .subscribe-block h1 {
+  color: red
 }
-.page .subscribe-block .subscribe-images {
+.page .subscribe-block-content {
+  background-color: #e2e2e2;
+  padding: 24px
+}
+.page .subscribe-block-images {
   height: 227px;
-  margin: 0 auto
+  margin-bottom: 10px
 }
-.page .subscribe-block .subscribe-images img {
+.page .subscribe-block-images div {
+  height: inherit;
+  width: 170px
+}
+.page .subscribe-block-images img {
   width: auto;
   height: 100%
 }
-.page .subscribe-block .subscribe-images .subscribe-image1 {
-  top: 10px
+.page .subscribe-block-image1 {
+  transform: translate(-70%,-50%)
+}
+.page .subscribe-block-image2 {
+  transform: translate(-30%,-45%)
+}
+.page .newsletter p,
+.page .subscribe-block p {
+  font: 300 15px/21px Arial,Helvetica,sans-serif
+}
+.page .newsletter .info h2 {
+  font: bold 22px/24px "Roboto Condensed",sans-serif
+}
+footer {
+  background-color: #fff;
+  margin-top: 20px;
+  color: #666;
+  padding: 48px 15px 30px
+}
+footer div > * {
+  padding-bottom: 10px
+}
+footer .social {
+  border-bottom: 1px solid #e2e2e2
+}
+footer .social .logo {
+  color: #f72210;
+  font-size: 46px
+}
+footer .social .copyright {
+  font: 12px/12px Arial,Helvetica,sans-serif
+}
+footer .social .media-icons {
+  font-size: 26px
+}
+footer .about,
+footer .editions {
+  font: 14px/15px Arial,Helvetica,sans-serif
+}
+footer .about span,
+footer .editions span {
+  margin-top: 6px;
+  margin-right: 15px
+}
+footer .about ul,
+footer .editions ul {
+  border: 0;
+  margin: 0;
+  padding: 0
+}
+footer .about ul li,
+footer .editions ul li {
+  display: inline-block;
+  padding-right: 18px;
+  margin: 6px 0;
+  list-style: none
 }
