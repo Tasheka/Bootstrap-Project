@@ -1,9 +1,12 @@
 $main-color: #f72210;
 $second-color: #3581f4;
+$third-color: #342;
 $button-color: #ffe400;
 $transparent-gray: rgba(3, 3, 3, 0.4);
 $soft-gray: #e2e2e2;
 $soft-gray-tone2: #d6d6d6;
+$soft-gray-tone3: #555555;
+$gray: #333333;
 $icons-opacity: 0.75;
 $border: 1px solid $soft-gray;
 $debate-border: 4px solid $soft-gray;
@@ -30,38 +33,30 @@ img {
   height: auto;
 }
 
-.fa-icon1 {
-  font-size: 20px;
-}
-
-.f-logo {
+.logo {
   @include kadwa(bold, 28px, 0);
 
   letter-spacing: -3px;
-}
 
-.news-logo {
-  background-color: $main-color;
-  width: 29px;
-  height: 28px;
-  margin-right: 5%;
+
+  &-simple {
+    background-color: $main-color;
+    width: 29px;
+    height: 28px;
+    margin-right: 5%;
+  }
 }
 
 .navb {
   background-color: $main-color;
   height: 50px;
 
-  .logo {
-    @extend .f-logo;
-  }
-
-  .user {
-    @extend .fa-icon1;
-
+  &-user {
+    font-size: 20px;
     opacity: $icons-opacity;
   }
 
-  .subs {
+  &-subscribe {
     @include roboto(bold, 13px, 24px);
 
     border-radius: 24px;
@@ -74,7 +69,7 @@ img {
     }
   }
 
-  .toggler {
+  &-toggler {
     opacity: $icons-opacity;
   }
 }
@@ -94,160 +89,187 @@ img {
       top: 20px;
     }
 
-    .top-story {
-      padding: {
-        bottom: 20px;
-      }
-
-      > * {
-        margin: {
-          bottom: 10px;
-        }
-      }
-    }
-
-    .featured {
-      @extend .top-story;
-    }
-
-    .block-title {
+    h1 {
       @include roboto(bold, 16px, 16px);
 
       color: $transparent-gray;
+      padding-bottom: 11px;
+      margin: 0;
     }
 
-    .picture-text {
-      @include roboto(bold, 17px, 16px);
+    section {
+      padding-bottom: 16px;
 
-      background-color: rgba(255, 255, 255, 0.9);
-      color: $main-color;
-      width: max-content;
-      height: max-content;
-      z-index: 0;
-
-      padding: {
-        top: 10px;
-        right: 10px;
-        bottom: 5px;
-        left: 10px;
-      }
-    }
-
-    .picture-title {
-      @include roboto(bold, 22px, 24px);
-    }
-
-    .sponsor {
-      @extend .top-story;
-
-      .picture-text {
-        color: $second-color;
+      > * {
+        margin-bottom: 16px;
       }
 
-      .sponsored-text {
-        padding: 20px;
-        border: 1px solid $soft-gray;
+      figure {
+        figcaption {
+          @include roboto(bold, 17px, 16px);
+
+          background-color: rgba(255, 255, 255, 0.9);
+          color: $main-color;
+          width: max-content;
+          height: max-content;
+          z-index: 0;
+
+          padding: {
+            top: 10px;
+            right: 10px;
+            bottom: 5px;
+            left: 10px;
+          }
+        }
+      }
+
+      h2 {
+        @include roboto(bold, 22px, 24px);
       }
     }
   }
 
-  .opinion {
-    .opinion-img {
-      width: 63px;
-      height: 63px;
-
-      margin: {
-        right: 15px;
+  .debate {
+    section {
+      padding: {
+        top: 10px;
         bottom: 10px;
+      }
+
+      div {
+        padding: 0;
+        margin: 0;
+      }
+
+      img {
+        width: 63px;
+        height: 63px;
+
+        margin: {
+          top: 0;
+          right: 15px;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      h1 {
+        color: black;
       }
     }
 
-    .opinion-txt {
-      color: black;
+    h1 {
       @include roboto(bold, 17px, 21px);
     }
 
-    .opinion-txt-2 {
-      color: #555;
-      @include roboto(bold, 14px, 21px);
+    h2 {
+      @include roboto(normal, 14px, 21px);
+
+      color: $soft-gray-tone3;
     }
 
-    .debate {
-      margin-top: 10px;
-      border-bottom: $border;
-    }
+    &-vs {
+      height: 3px;
 
-    .debate-top {
-      border-top: $debate-border;
-      padding-top: 10px;
-      border-bottom: 2px double $soft-gray;
-    }
-
-    .debate-bottom {
-      border-bottom: $debate-border;
-      margin-bottom: 30px;
-      margin-top: 26px;
-    }
-
-    .vs-line {
       border: {
         top: $border;
         bottom: $border;
       }
 
-      height: 3px;
+      margin: {
+        top: 16px;
+        right: 0;
+        bottom: 16px;
+        left: 0;
+      }
 
-      .vs-container {
-        left: 46%;
+      div {
+        left: 50%;
+        top: 50%;
         width: 32px;
         height: 32px;
-        top: -16px;
         background-color: black;
         color: $soft-gray-tone2;
         border-radius: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &-top {
+      border-top: $debate-border;
+    }
+
+    &-bottom {
+      border-bottom: $debate-border;
+      margin-bottom: 32px;
+    }
+  }
+
+  .opinion {
+    @extend .debate;
+
+    section {
+      border-bottom: $border;
+    }
+  }
+
+  .sponsored {
+    figure {
+      margin: 0;
+
+      figcaption {
+        color: $second-color;
+      }
+    }
+
+    .info {
+      padding: 20px;
+      border: 1px solid $soft-gray;
+
+      h2 {
+        @include roboto(bold, 17px, 21px);
+      }
+
+      p {
+        color: $gray;
       }
     }
   }
 
-  .more {
-    @extend .opinion;
-    border-top: $border;
-    padding-top: 20px;
+  .more-stories {
+    @extend .debate;
 
-    .more-img {
-      @extend .opinion-img;
-      width: 95px;
-      height: 95px;
-    }
+    section {
+      border-top: $border;
 
-    .more-txt-2 {
-      @include arial(normal, 13px, 18px);
-      margin-top: 10px;
-    }
+      img {
+        width: 95px;
+        height: 95px;
+      }
 
-    .more-txt {
-      @extend .opinion-txt;
     }
   }
 
   .my-turn {
     .turn {
       img {
-        height: 290px;
-        width: 290px;
         object-fit: cover;
+      }
 
-        margin: {
-          bottom: 10px;
-          top: 10px;
+      figure {
+        padding-bottom: 10px;
+
+        figcaption {
+          @include roboto(bold, 13px, 20px);
+          color: $third-color;
+          background-color: $gray-tone3;
+          padding: 0px 6px;
         }
       }
 
-      p {
+      h1 {
         @include roboto(bold, 16px, 19px);
         color: $transparent-gray;
-        margin-bottom: 25px;
-        padding-top: 15px;
       }
 
       .picture-text {
@@ -266,42 +288,59 @@ img {
       }
     }
 
-    .subscribe-txt {
-      @include roboto(bold, 19px, 19px);
+    .sponsored {
+      @extend .sponsored;
     }
 
-    .sub-button {
-      background-color: $main-color;
-      color: white;
-      font-weight: bold;
-      border-radius: 3px;
-      height: 32px;
-      margin-top: 2%;
-      border: $main-color;
-    }
-
-    .txt-box {
+    .subscribe-form {
       border: $border;
-      height: 30px;
-    }
-
-    .sub-form {
-      border: $border;
-      background-color: #f4f5f6;
+      background-color: $soft-gray;
       padding: 20px;
-    }
-  }
+      max-width: 280px;
 
-  .magazine-title {
-    @include roboto(bold, 19px, 19px);
-    margin: 0;
+      margin: {
+        bottom: 30px;
+        left: auto;
+        right: auto;
+      }
+
+      &-txt {
+        @include roboto(bold, 19px, 19px);
+        margin: 0;
+      }
+
+      &-box {
+        border: $border;
+        height: 30px;
+      }
+
+      &-button {
+        background-color: $main-color;
+        color: white;
+        font-weight: bold;
+        border-radius: 3px;
+        height: 32px;
+        margin-top: 2%;
+        border: $main-color;
+      }
+    }
   }
 
   .magazine {
-    img {
-      height: auto;
-      width: 100%;
-      margin-top: 20px;
+    figure {
+      margin-bottom: 6px;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    &-title {
+      @include roboto(bold, 19px, 19px);
+      margin: 0;
+      padding: 0;
+      color: black;
     }
   }
 
@@ -312,55 +351,65 @@ img {
     text-align: center;
   }
 
-  .magazine {
-    padding-bottom: 0;
-  }
-
   .extra-content {
-    padding-top: 20px;
-
-    .bar-magazine {
+    &-bar {
       @include roboto(bold, 16px, 26px);
-
-      margin: {
-        top: 12px;
-        bottom: 10px;
-      }
-
-      span {
-        padding: 4px 7px;
-      }
-
-      .bar-txt2 {
-        color: $main-color;
-      }
     }
 
-    h5 {
-      @include roboto(normal, 16px, 16px);
-    }
-
-    .extra-text-different {
-      padding: {
-        top: 10px;
-        bottom: 20px;
-      }
-    }
-
-    .bar-txt1 {
+    &-txt1 {
       background-color: $main-color;
       color: white;
+      padding: 4px 7px;
       margin-right: 7px;
     }
 
-    .extra-different {
-      margin-bottom: 8px;
+    &-txt2 {
+      color: $main-color;
+    }
+
+    h1 {
+      @include roboto(bold, 16px, 16px);
+      color: black;
     }
   }
 
-  .editor-title{
+  .lineup {
+    figcaption {
+      @extend .extra-content-txt1;
+    }
+
+    img {
+      padding-bottom: 5px;
+    }
+  }
+
+  .editor-title {
     border-bottom: $border;
     margin-bottom: 15px;
     padding-bottom: 15px;
+  }
+
+  .subscribe-block {
+    .block-title {
+      color: red;
+    }
+
+    .subscribe-content {
+      background-color: $soft-gray;
+    }
+
+    .subscribe-images {
+      height: 227px;
+      margin: 0 auto;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+
+      .subscribe-image1 {
+        top: 10px;
+      }
+    }
   }
 }

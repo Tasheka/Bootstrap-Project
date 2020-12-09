@@ -1,24 +1,23 @@
 a,
 aside,
+b,
 body,
 div,
+figcaption,
+figure,
 footer,
 form,
 h1,
 h2,
-h3,
-h5,
 html,
 i,
 img,
-li,
 main,
 nav,
 p,
 s,
 section,
-span,
-ul {
+span {
   margin: 0;
   padding: 0;
   border: 0;
@@ -27,6 +26,8 @@ ul {
   vertical-align: baseline
 }
 aside,
+figcaption,
+figure,
 footer,
 main,
 nav,
@@ -35,7 +36,4 @@ section {
 }
 body {
   line-height: 1
-}
-ul {
-  list-style: none
 }
