@@ -65,8 +65,8 @@ img {
 
   &-subscribe {
     @include roboto(bold, 13px, 24px);
-    margin-right: 10px;
 
+    margin-right: 10px;
     border-radius: 24px;
     background-color: $button-color;
     border: none;
@@ -79,375 +79,6 @@ img {
 
   &-toggler {
     opacity: $icons-opacity;
-  }
-}
-
-.page {
-  aside {
-    border-bottom: $border;
-    background-color: white;
-
-    margin: {
-      top: 18px;
-    }
-
-    padding: {
-      right: 15px;
-      left: 15px;
-      top: 20px;
-    }
-
-    h1 {
-      @include roboto(bold, 16px, 16px);
-
-      color: $transparent-gray;
-      padding-bottom: 11px;
-      margin: 0;
-    }
-
-    section {
-      padding-bottom: 16px;
-
-      > * {
-        margin-bottom: 16px;
-      }
-
-      figure {
-        figcaption {
-          @include roboto(bold, 17px, 16px);
-
-          background-color: rgba(255, 255, 255, 0.9);
-          color: $main-color;
-          width: max-content;
-          height: max-content;
-          z-index: 0;
-
-          padding: {
-            top: 10px;
-            right: 10px;
-            bottom: 5px;
-            left: 10px;
-          }
-        }
-      }
-
-      h2 {
-        @include roboto(bold, 22px, 24px);
-      }
-    }
-  }
-
-  .debate {
-    h1 {
-      @include roboto(bold, 17px, 21px);
-
-      color: black;
-    }
-
-    section {
-      padding: {
-        top: 10px;
-        bottom: 10px;
-      }
-
-      div {
-        padding: 0;
-        margin: 0;
-      }
-
-      img {
-        width: 63px;
-        height: 63px;
-
-        margin: {
-          top: 0;
-          right: 15px;
-          bottom: 0;
-          left: 0;
-        }
-      }
-    }
-
-    h2 {
-      @include roboto(normal, 14px, 21px);
-
-      color: $soft-gray-tone3;
-    }
-
-    &-vs {
-      height: 3px;
-
-      border: {
-        top: $border;
-        bottom: $border;
-      }
-
-      margin: {
-        top: 16px;
-        right: 0;
-        bottom: 16px;
-        left: 0;
-      }
-
-      div {
-        @extend .transform-center;
-        width: 32px;
-        height: 32px;
-        background-color: black;
-        color: $soft-gray-tone2;
-        border-radius: 50%;
-      }
-    }
-
-    &-top {
-      border-top: $debate-border;
-    }
-
-    &-bottom {
-      border-bottom: $debate-border;
-      margin-bottom: 32px;
-    }
-  }
-
-  .opinion {
-    @extend .debate;
-
-    section {
-      border-bottom: $border;
-    }
-  }
-
-  .sponsored {
-    figure {
-      margin: 0;
-
-      figcaption {
-        color: $second-color;
-      }
-    }
-
-    .info {
-      padding: 20px;
-      border: 1px solid $soft-gray;
-
-      h2 {
-        @include roboto(bold, 17px, 21px);
-      }
-
-      p {
-        color: $gray;
-      }
-    }
-  }
-
-  .more-stories {
-    @extend .debate;
-
-    section {
-      border-top: $border;
-
-      img {
-        width: 95px;
-        height: 95px;
-      }
-
-    }
-  }
-
-  .my-turn {
-    .turn {
-      img {
-        object-fit: cover;
-      }
-
-      figure {
-        padding-bottom: 10px;
-
-        figcaption {
-          @include roboto(bold, 13px, 20px);
-          color: $third-color;
-          background-color: $gray-tone3;
-          padding: 0px 6px;
-        }
-      }
-
-      h1 {
-        @include roboto(bold, 16px, 19px);
-        color: $transparent-gray;
-      }
-
-      .picture-text {
-        color: black;
-        background-color: $gray-tone3;
-        padding-top: 10px;
-        font-size: 13px;
-        line-height: 20px;
-
-        padding: {
-          right: 6px;
-          left: 6px;
-          top: 3px;
-          bottom: 3px;
-        }
-      }
-    }
-
-    .sponsored {
-      @extend .sponsored;
-    }
-
-    .subscribe-form {
-      border: $border;
-      background-color: $soft-gray;
-      padding: 20px;
-
-      margin: {
-        bottom: 30px;
-        left: auto;
-        right: auto;
-      }
-
-      &-txt {
-        @include roboto(bold, 19px, 19px);
-        margin: 0;
-      }
-
-      &-box {
-        border: $border;
-        height: 32px;
-        width: 100%;
-      }
-
-      &-button {
-        background-color: $main-color;
-        color: white;
-        font-weight: bold;
-        border-radius: 3px;
-        height: 32px;
-        border: $main-color;
-        white-space: nowrap;
-        width: 100%;
-      }
-    }
-
-    .max-form {
-      max-width: 300px;
-    }
-  }
-
-  .magazine {
-    figure {
-      margin-bottom: 6px;
-
-      img {
-        height: auto;
-        width: 100%;
-      }
-    }
-
-    &-title {
-      @include roboto(bold, 19px, 19px);
-      margin: 0;
-      padding: 0;
-      color: black;
-    }
-  }
-
-  .see-all {
-    @include roboto(bold, 18px, 18px);
-    background: $soft-gray;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .extra-content {
-    &-bar {
-      @include roboto(bold, 16px, 26px);
-    }
-
-    &-txt1 {
-      background-color: $main-color;
-      color: white;
-      padding: 4px 7px;
-      margin-right: 7px;
-    }
-
-    &-txt2 {
-      color: $main-color;
-    }
-
-    h1 {
-      @include roboto(bold, 16px, 16px);
-      color: black;
-    }
-  }
-
-  .lineup {
-    figcaption {
-      @extend .extra-content-txt1;
-    }
-
-    img {
-      padding-bottom: 5px;
-    }
-  }
-
-  .subscribe-block {
-    h1 {
-      color: red;
-    }
-
-    // Please note that, in the original page, this image and it's
-    // container is not responsive, is fixed size.
-    &-content {
-      @extend .my-turn;
-      background-color: $soft-gray;
-      padding: 24px;
-    }
-
-    &-images {
-      height: 227px;
-      margin-bottom: 10px;
-
-      div {
-        height: inherit;
-        width: 170px;
-      }
-
-      img {
-        width: auto;
-        height: 100%;
-      }
-    }
-
-    &-image1 {
-      @extend .transform-center;
-      transform: translate(-70%, -50%);
-    }
-
-    &-image2 {
-      @extend .transform-center;
-      transform: translate(-30%, -45%);
-    }
-
-    p {
-      @include arial(300, 15px, 21px);
-    }
-  }
-
-  .newsletter {
-    @extend .sponsored;
-    @extend .subscribe-block;
-
-    section {
-      @extend .my-turn;
-    }
-
-    .info {
-      h2 {
-        @include roboto(bold, 22px, 24px);
-      }
-    }
   }
 }
 
@@ -510,5 +141,383 @@ footer {
 
   .about {
     @extend .editions;
+  }
+}
+
+.page {
+  aside {
+    border-bottom: $border;
+    background-color: white;
+
+    margin: {
+      top: 18px;
+    }
+
+    padding: {
+      right: 15px;
+      left: 15px;
+      top: 20px;
+    }
+
+    h1 {
+      @include roboto(bold, 16px, 16px);
+
+      color: $transparent-gray;
+      padding-bottom: 11px;
+      margin: 0;
+    }
+
+    section {
+      padding-bottom: 16px;
+
+      > * {
+        margin-bottom: 16px;
+      }
+
+      figure {
+        figcaption {
+          @include roboto(bold, 17px, 16px);
+
+          background-color: rgba(255, 255, 255, 0.9);
+          color: $main-color;
+          width: max-content;
+          height: max-content;
+          z-index: 0;
+
+          padding: {
+            top: 10px;
+            right: 10px;
+            bottom: 5px;
+            left: 10px;
+          }
+        }
+      }
+
+      h2 {
+        @include roboto(bold, 22px, 24px);
+      }
+    }
+  }
+
+  .lineup {
+    figcaption {
+      @extend .extra-content-txt1;
+    }
+
+    img {
+      padding-bottom: 5px;
+    }
+  }
+
+  .subscribe-block {
+    h1 {
+      color: red;
+    }
+
+    // Please note that, in the original page, this image and it's
+    // container is not responsive, is fixed size.
+    &-content {
+      @extend .my-turn;
+
+      background-color: $soft-gray;
+      padding: 24px;
+    }
+
+    &-images {
+      height: 227px;
+      margin-bottom: 10px;
+
+      div {
+        height: inherit;
+        width: 170px;
+      }
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    &-image1 {
+      @extend .transform-center;
+
+      transform: translate(-70%, -50%);
+    }
+
+    &-image2 {
+      @extend .transform-center;
+
+      transform: translate(-30%, -45%);
+    }
+
+    p {
+      @include arial(300, 15px, 21px);
+    }
+  }
+
+  .debate {
+    h1 {
+      @include roboto(bold, 17px, 21px);
+
+      color: black;
+    }
+
+    &-vs {
+      height: 3px;
+
+      border: {
+        top: $border;
+        bottom: $border;
+      }
+
+      margin: {
+        top: 16px;
+        right: 0;
+        bottom: 16px;
+        left: 0;
+      }
+
+      div {
+        @extend .transform-center;
+
+        width: 32px;
+        height: 32px;
+        background-color: black;
+        color: $soft-gray-tone2;
+        border-radius: 50%;
+      }
+    }
+
+    section {
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      }
+
+      div {
+        padding: 0;
+        margin: 0;
+      }
+
+      img {
+        width: 63px;
+        height: 63px;
+
+        margin: {
+          top: 0;
+          right: 15px;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+
+    h2 {
+      @include roboto(normal, 14px, 21px);
+
+      color: $soft-gray-tone3;
+    }
+
+    &-top {
+      border-top: $debate-border;
+    }
+
+    &-bottom {
+      border-bottom: $debate-border;
+      margin-bottom: 32px;
+    }
+  }
+
+  .opinion {
+    @extend .debate;
+
+    section {
+      border-bottom: $border;
+    }
+  }
+
+  .sponsored {
+    figure {
+      margin: 0;
+
+      figcaption {
+        color: $second-color;
+      }
+    }
+
+    .info {
+      padding: 20px;
+      border: 1px solid $soft-gray;
+
+      h2 {
+        @include roboto(bold, 17px, 21px);
+      }
+
+      p {
+        color: $gray;
+      }
+    }
+  }
+
+  .more-stories {
+    @extend .debate;
+
+    section {
+      border-top: $border;
+
+      img {
+        width: 95px;
+        height: 95px;
+      }
+    }
+  }
+
+  .magazine {
+    figure {
+      margin-bottom: 6px;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    &-title {
+      @include roboto(bold, 19px, 19px);
+
+      margin: 0;
+      padding: 0;
+      color: black;
+    }
+  }
+
+  .extra-content {
+    &-bar {
+      @include roboto(bold, 16px, 26px);
+    }
+
+    &-txt1 {
+      background-color: $main-color;
+      color: white;
+      padding: 4px 7px;
+      margin-right: 7px;
+    }
+
+    &-txt2 {
+      color: $main-color;
+    }
+
+    h1 {
+      @include roboto(bold, 16px, 16px);
+
+      color: black;
+    }
+  }
+
+  .my-turn {
+    .turn {
+      img {
+        object-fit: cover;
+      }
+
+      figure {
+        padding-bottom: 10px;
+
+        figcaption {
+          @include roboto(bold, 13px, 20px);
+
+          color: $third-color;
+          background-color: $gray-tone3;
+          padding: 0 6px;
+        }
+      }
+
+      h1 {
+        @include roboto(bold, 16px, 19px);
+
+        color: $transparent-gray;
+      }
+
+      .picture-text {
+        color: black;
+        background-color: $gray-tone3;
+        padding-top: 10px;
+        font-size: 13px;
+        line-height: 20px;
+
+        padding: {
+          right: 6px;
+          left: 6px;
+          top: 3px;
+          bottom: 3px;
+        }
+      }
+    }
+
+    .sponsored {
+      @extend .sponsored;
+    }
+
+    .subscribe-form {
+      border: $border;
+      background-color: $soft-gray;
+      padding: 20px;
+
+      margin: {
+        bottom: 30px;
+        left: auto;
+        right: auto;
+      }
+
+      &-txt {
+        @include roboto(bold, 19px, 19px);
+
+        margin: 0;
+      }
+
+      &-box {
+        border: $border;
+        height: 32px;
+        width: 100%;
+      }
+
+      &-button {
+        background-color: $main-color;
+        color: white;
+        font-weight: bold;
+        border-radius: 3px;
+        height: 32px;
+        border: $main-color;
+        white-space: nowrap;
+        width: 100%;
+      }
+    }
+
+    .max-form {
+      max-width: 300px;
+    }
+  }
+
+  .see-all {
+    @include roboto(bold, 18px, 18px);
+
+    background: $soft-gray;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .newsletter {
+    @extend .sponsored;
+    @extend .subscribe-block;
+
+    section {
+      @extend .my-turn;
+    }
+
+    .info {
+      h2 {
+        @include roboto(bold, 22px, 24px);
+      }
+    }
   }
 }
