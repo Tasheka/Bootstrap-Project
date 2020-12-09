@@ -28,10 +28,12 @@ img {
 }
 .navb-user {
   font-size: 20px;
-  opacity: .75
+  opacity: .75;
+  margin-right: 7px
 }
 .navb-subscribe {
   font: bold 13px/24px "Roboto Condensed",sans-serif;
+  margin-right: 10px;
   border-radius: 24px;
   background-color: #ffe400;
   border: none;

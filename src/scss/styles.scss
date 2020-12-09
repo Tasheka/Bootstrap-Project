@@ -60,10 +60,12 @@ img {
   &-user {
     font-size: 20px;
     opacity: $icons-opacity;
+    margin-right: 7px;
   }
 
   &-subscribe {
     @include roboto(bold, 13px, 24px);
+    margin-right: 10px;
 
     border-radius: 24px;
     background-color: $button-color;
