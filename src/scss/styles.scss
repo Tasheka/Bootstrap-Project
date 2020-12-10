@@ -24,14 +24,45 @@ body {
   @include arial(normal, 0.8125rem, 1.125rem);
 }
 
+.left-nav {
+  @include roboto(bold, 13px, 18px);
+}
+
+.right-nav {
+  @include roboto(bold, 13px, 24px);
+}
+
+.nav2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.sear {
+  font-size: 17px;
+}
+
 img {
   width: 100%;
   height: auto;
   display: cover;
 }
 
+.logo {
+  @include kadwa(bold, 28px, 0);
+
+  @media screen and (min-width: 992px) {
+    @include kadwa(bold, 56px, 0);
+  }
+}
+
 .logo-text {
   @include kadwa(bold, 1.75rem, 0);
+
   letter-spacing: -3px;
 }
 
@@ -54,7 +85,6 @@ img {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 .bg-main {
   background-color: $main-color;
@@ -79,7 +109,9 @@ nav {
 
   .subscribe {
     @include roboto(bold, 0.8125rem, 1.5rem);
+
     background-color: $button-color;
+    border-radius: 24%;
   }
 }
 
@@ -100,7 +132,7 @@ section {
       width: max-content;
       height: max-content;
       color: $main-color;
-      opacity: 0.90;
+      opacity: 0.9;
       // Needed because this will pass above the navbar. Someone, in
       // their infinite wisdom, decided that the fixed class will
       // have a z-index of 1030.

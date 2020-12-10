@@ -1,10 +1,32 @@
 body {
   font: .8125rem/1.125rem Arial,Helvetica,sans-serif
 }
+.left-nav {
+  font: bold 13px/18px "Roboto Condensed",sans-serif
+}
+.nav2 {
+  font-size: 18px;
+  font-weight: 700
+}
+.nav3 {
+  font-size: 15px;
+  font-weight: 700
+}
+.sear {
+  font-size: 17px
+}
 img {
   width: 100%;
   height: auto;
   display: cover
+}
+.logo {
+  font: bold 28px/0 Kadwa,serif
+}
+@media screen and (min-width:992px) {
+  .logo {
+    font: bold 56px/0 Kadwa,serif
+  }
 }
 .logo-text {
   font: bold 1.75rem/0 Kadwa,serif;
@@ -14,9 +36,6 @@ img {
   background-color: #f72210;
   width: 30px;
   height: 30px
-}
-.opacity-75 {
-  opacity: .75
 }
 section .debate-vs div,
 section .subscribe-block-image1,
@@ -39,12 +58,10 @@ section form button {
 nav {
   background-color: #f72210
 }
-nav .user {
-  font-size: 1.25rem
-}
 nav .subscribe {
   font: bold .8125rem/1.5rem "Roboto Condensed",sans-serif;
-  background-color: #ffe400
+  background-color: #ffe400;
+  border-radius: 24%
 }
 section h1 {
   font: bold 1rem/1rem "Roboto Condensed",sans-serif
