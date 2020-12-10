@@ -1,5 +1,5 @@
 a,
-aside,
+article,
 b,
 body,
 div,
@@ -14,7 +14,6 @@ i,
 img,
 li,
 main,
-menu,
 nav,
 p,
 s,
@@ -28,12 +27,11 @@ ul {
   font: inherit;
   vertical-align: baseline
 }
-aside,
+article,
 figcaption,
 figure,
 footer,
 main,
-menu,
 nav,
 section {
   display: block
@@ -41,7 +39,6 @@ section {
 body {
   line-height: 1
 }
-menu,
 ul {
   list-style: none
 }

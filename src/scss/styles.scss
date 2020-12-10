@@ -1,20 +1,15 @@
 $main-color: #f72210;
-$second-color: #3581f4;
-$third-color: #342;
 $button-color: #ffe400;
-$transparent-gray: rgba(3, 3, 3, 0.4);
-$soft-gray: #e2e2e2;
-$soft-gray-tone2: #d6d6d6;
-$soft-gray-tone3: #555;
-$gray: #333;
-$icons-opacity: 0.75;
-$border: 1px solid $soft-gray;
-$debate-border: 4px solid $soft-gray;
-$gray-tone3: #c2d4d7;
-$gray-tone4: #666;
+$third-color: #342;
+$third-background: #c2d4d7;
+$main-soft-gray: #d6d6d6;
 
 @mixin arial($st, $fs, $lh) {
   font: #{$st} #{$fs}/#{$lh} Arial, Helvetica, sans-serif;
+}
+
+@mixin helvetica($st, $fs, $lh) {
+  font: #{$st} #{$fs}/#{$lh} "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin roboto($st, $fs, $lh) {
@@ -26,215 +21,169 @@ $gray-tone4: #666;
 }
 
 body {
-  @include arial(normal, 13px, 18px);
+  @include arial(normal, 0.8125rem, 1.125rem);
 }
 
 img {
   width: 100%;
   height: auto;
+  display: cover;
 }
 
-.logo {
-  @include kadwa(bold, 28px, 0);
-
+.logo-text {
+  @include kadwa(bold, 1.75rem, 0);
   letter-spacing: -3px;
-
-  &-simple {
-    background-color: $main-color;
-    width: 29px;
-    height: 28px;
-    margin-right: 5%;
-  }
 }
 
+.logo-simple {
+  // This logo is fixed size, not responsive, so don't ask me to
+  // make it responsive.
+  background-color: $main-color;
+  width: 30px;
+  height: 30px;
+}
+
+// Bootstrap 4 does not have any class for opacity.
+.opacity-75 {
+  opacity: 0.75;
+}
+
+// Bootstrap 3 does not have transformation classess
 .transform-center {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.navb {
+
+.bg-main {
   background-color: $main-color;
-  height: 50px;
+}
 
-  &-user {
-    font-size: 20px;
-    opacity: $icons-opacity;
-    margin-right: 7px;
+.text-main {
+  color: $main-color;
+}
+
+// And again, bootstrap in their infinite and undebatable wisdom...
+.sticky-column {
+  z-index: 0 !important;
+  top: 42px;
+}
+
+nav {
+  background-color: $main-color;
+
+  .user {
+    font-size: 1.25rem;
   }
 
-  &-subscribe {
-    @include roboto(bold, 13px, 24px);
-
-    margin-right: 10px;
-    border-radius: 24px;
+  .subscribe {
+    @include roboto(bold, 0.8125rem, 1.5rem);
     background-color: $button-color;
-    border: none;
-
-    padding: {
-      left: 12px;
-      right: 12px;
-    }
-  }
-
-  &-toggler {
-    opacity: $icons-opacity;
   }
 }
 
-footer {
-  background-color: white;
-  margin-top: 20px;
-  color: $gray-tone4;
-
-  div > * {
-    padding-bottom: 10px;
+section {
+  h1 {
+    @include roboto(bold, 1rem, 1rem);
   }
 
-  padding: {
-    top: 48px;
-    right: 15px;
-    bottom: 30px;
-    left: 15px;
-  }
-
-  .social {
-    border-bottom: $border;
-
-    .logo {
-      color: $main-color;
-      font-size: 46px;
+  article {
+    h2 {
+      @include roboto(bold, 1.375rem, 1.5rem);
     }
 
-    .copyright {
-      @include arial(normal, 12px, 12px);
-    }
-
-    .media-icons {
-      font-size: 26px;
-    }
-  }
-
-  .editions {
-    @include arial(normal, 14px, 15px);
-
-    span {
-      margin: {
-        top: 6px;
-        right: 15px;
-      }
-    }
-
-    ul {
-      border: 0;
-      margin: 0;
-      padding: 0;
-
-      li {
-        display: inline-block;
-        padding-right: 18px;
-        margin: 6px 0;
-        list-style: none outside none;
-      }
-    }
-  }
-
-  .about {
-    @extend .editions;
-  }
-}
-
-.page {
-  aside {
-    border-bottom: $border;
-    background-color: white;
-
-    margin: {
-      top: 18px;
-    }
-
-    padding: {
-      right: 15px;
-      left: 15px;
-      top: 20px;
-    }
-
-    h1 {
-      @include roboto(bold, 16px, 16px);
-
-      color: $transparent-gray;
-      padding-bottom: 11px;
-      margin: 0;
-    }
-
-    section {
-      padding-bottom: 16px;
-
-      > * {
-        margin-bottom: 16px;
-      }
-
-      figure {
-        figcaption {
-          @include roboto(bold, 17px, 16px);
-
-          background-color: rgba(255, 255, 255, 0.9);
-          color: $main-color;
-          width: max-content;
-          height: max-content;
-          z-index: 0;
-
-          padding: {
-            top: 10px;
-            right: 10px;
-            bottom: 5px;
-            left: 10px;
-          }
-        }
-      }
-
-      h2 {
-        @include roboto(bold, 22px, 24px);
-      }
-    }
-  }
-
-  .lineup {
     figcaption {
-      @extend .extra-content-txt1;
+      @include roboto(bold, 1rem, 1rem);
+      // This width and height is not available on bootstrap and it
+      // is needed for the text to show correctly.
+      width: max-content;
+      height: max-content;
+      color: $main-color;
+      opacity: 0.90;
+      // Needed because this will pass above the navbar. Someone, in
+      // their infinite wisdom, decided that the fixed class will
+      // have a z-index of 1030.
+      z-index: 1 !important;
     }
 
-    img {
-      padding-bottom: 5px;
+    .h1 {
+      @include roboto(bold, 1rem, 1.1875rem);
+    }
+
+    .h2 {
+      @include roboto(bold, 1.0625rem, 1.25rem);
+    }
+
+    .fc2 {
+      @extend figcaption;
+      // These colors are not available on Bootstrap.
+      color: $third-color;
+      background-color: $third-background;
+    }
+
+    // The debate image is squared, fixed width and height and,
+    // therefore, not responsive.
+    .db-img {
+      width: 63px;
+      height: 63px;
     }
   }
 
+  .debate-top {
+    // Bootstrap won't let me change the thickness of the border
+    // if I do not use the !important keyword.
+    //
+    // Bad practice, you said? Give me a solution.
+    border-top-width: 4px !important;
+  }
+
+  .debate-bottom {
+    border-bottom-width: 4px !important;
+  }
+
+  // This debate "VS" thing needs to be pixel perfect. Anyway, it is
+  // responisve. Therefore, don't ask me to remove it.w
+  .debate-vs {
+    height: 3px;
+
+    div {
+      @extend .transform-center;
+
+      width: 32px;
+      height: 32px;
+      color: $main-soft-gray;
+      border-radius: 50%;
+    }
+  }
+
+  // The form is responsive, but has a maximum width of 300px, which can not
+  // be done in Bootstrap.
+  .form {
+    max-width: 300px;
+  }
+
+  form {
+    figcaption {
+      @include roboto(bold, 1.1875rem, 1.1875rem);
+    }
+
+    button {
+      @extend .bg-main;
+    }
+  }
+
+  // Note that this transform is also pixel-perfect and cannot be done with
+  // Bootstrap only.
   .subscribe-block {
-    h1 {
-      color: red;
-    }
-
-    // Please note that, in the original page, this image and it's
-    // container is not responsive, is fixed size.
-    &-content {
-      @extend .my-turn;
-
-      background-color: $soft-gray;
-      padding: 24px;
-    }
+    @include helvetica(300, 0.9375rem, 1.3125rem);
 
     &-images {
       height: 227px;
-      margin-bottom: 10px;
 
       div {
         height: inherit;
         width: 170px;
-      }
-
-      img {
-        width: auto;
-        height: 100%;
       }
     }
 
@@ -250,274 +199,40 @@ footer {
       transform: translate(-30%, -45%);
     }
 
-    p {
-      @include arial(300, 15px, 21px);
+    button {
+      @include roboto(bold, 1.125rem, 1.125rem);
     }
   }
+}
 
-  .debate {
-    h1 {
-      @include roboto(bold, 17px, 21px);
-
-      color: black;
-    }
-
-    &-vs {
-      height: 3px;
-
-      border: {
-        top: $border;
-        bottom: $border;
-      }
-
-      margin: {
-        top: 16px;
-        right: 0;
-        bottom: 16px;
-        left: 0;
-      }
-
-      div {
-        @extend .transform-center;
-
-        width: 32px;
-        height: 32px;
-        background-color: black;
-        color: $soft-gray-tone2;
-        border-radius: 50%;
-      }
-    }
-
-    section {
-      padding: {
-        top: 10px;
-        bottom: 10px;
-      }
-
-      div {
-        padding: 0;
-        margin: 0;
-      }
-
-      img {
-        width: 63px;
-        height: 63px;
-
-        margin: {
-          top: 0;
-          right: 15px;
-          bottom: 0;
-          left: 0;
-        }
-      }
-    }
-
-    h2 {
-      @include roboto(normal, 14px, 21px);
-
-      color: $soft-gray-tone3;
-    }
-
-    &-top {
-      border-top: $debate-border;
-    }
-
-    &-bottom {
-      border-bottom: $debate-border;
-      margin-bottom: 32px;
-    }
+footer {
+  .logo-text {
+    font-size: 2.875rem;
   }
 
-  .opinion {
-    @extend .debate;
-
-    section {
-      border-bottom: $border;
-    }
+  .copyright {
+    @include arial(normal, 0.75rem, 0.75rem);
   }
 
-  .sponsored {
-    figure {
-      margin: 0;
-
-      figcaption {
-        color: $second-color;
-      }
-    }
-
-    .info {
-      padding: 20px;
-      border: 1px solid $soft-gray;
-
-      h2 {
-        @include roboto(bold, 17px, 21px);
-      }
-
-      p {
-        color: $gray;
-      }
-    }
+  .media-icons {
+    font-size: 1.625rem;
   }
 
-  .more-stories {
-    @extend .debate;
-
-    section {
-      border-top: $border;
-
-      img {
-        width: 95px;
-        height: 95px;
-      }
-    }
+  .editions {
+    @include arial(normal, 0.875rem, 0.9375rem);
   }
 
-  .magazine {
-    figure {
-      margin-bottom: 6px;
-
-      img {
-        height: auto;
-        width: 100%;
-      }
-    }
-
-    &-title {
-      @include roboto(bold, 19px, 19px);
-
-      margin: 0;
-      padding: 0;
-      color: black;
+  ul {
+    li {
+      list-style: none outside none;
     }
   }
+}
 
-  .extra-content {
-    &-bar {
-      @include roboto(bold, 16px, 26px);
-    }
-
-    &-txt1 {
-      background-color: $main-color;
-      color: white;
-      padding: 4px 7px;
-      margin-right: 7px;
-    }
-
-    &-txt2 {
-      color: $main-color;
-    }
-
-    h1 {
-      @include roboto(bold, 16px, 16px);
-
-      color: black;
-    }
-  }
-
-  .my-turn {
-    .turn {
-      img {
-        object-fit: cover;
-      }
-
-      figure {
-        padding-bottom: 10px;
-
-        figcaption {
-          @include roboto(bold, 13px, 20px);
-
-          color: $third-color;
-          background-color: $gray-tone3;
-          padding: 0 6px;
-        }
-      }
-
-      h1 {
-        @include roboto(bold, 16px, 19px);
-
-        color: $transparent-gray;
-      }
-
-      .picture-text {
-        color: black;
-        background-color: $gray-tone3;
-        padding-top: 10px;
-        font-size: 13px;
-        line-height: 20px;
-
-        padding: {
-          right: 6px;
-          left: 6px;
-          top: 3px;
-          bottom: 3px;
-        }
-      }
-    }
-
-    .sponsored {
-      @extend .sponsored;
-    }
-
-    .subscribe-form {
-      border: $border;
-      background-color: $soft-gray;
-      padding: 20px;
-
-      margin: {
-        bottom: 30px;
-        left: auto;
-        right: auto;
-      }
-
-      &-txt {
-        @include roboto(bold, 19px, 19px);
-
-        margin: 0;
-      }
-
-      &-box {
-        border: $border;
-        height: 32px;
-        width: 100%;
-      }
-
-      &-button {
-        background-color: $main-color;
-        color: white;
-        font-weight: bold;
-        border-radius: 3px;
-        height: 32px;
-        border: $main-color;
-        white-space: nowrap;
-        width: 100%;
-      }
-    }
-
-    .max-form {
-      max-width: 300px;
-    }
-  }
-
-  .see-all {
-    @include roboto(bold, 18px, 18px);
-
-    background: $soft-gray;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .newsletter {
-    @extend .sponsored;
-    @extend .subscribe-block;
-
-    section {
-      @extend .my-turn;
-    }
-
-    .info {
-      h2 {
-        @include roboto(bold, 22px, 24px);
-      }
-    }
+// The original site does this media query, which is not possible with
+// Bootstrap only (since it does not have max width, except for 100%)
+@media (min-width: 768px) {
+  .mw-md-330 {
+    max-width: 330px;
   }
 }

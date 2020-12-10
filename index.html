@@ -16,591 +16,902 @@
 </head>
 
 <body class="bg-light">
-  <nav class="navbar sticky-top navbar-expand-lg pb-0 pt-0 navb">
-    <a class="navbar-brand m-0 text-white logo" href="#">Newsweek</a>
-    <div class="d-flex flex-row align-items-center">
-      <a class="text-white navb-user" href="#"><i class="fas fa-user"></i></a>
-      <button type="button" class="navb-subscribe">SUSBCRIBE ></button>
-      <button type="button" class="navbar-toggler text-white pr-0 pl-0 navb-toggler" data-toggle="collapse" data-target="#menu-content" aria-controls="menu-content" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="menu-content">
-      </div>
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <a class="navbar-brand text-white logo-text" href="#">Newsweek</a>
+    <a class="text-white opacity-75 ml-auto mr-2 user" href="#"><i class="fas fa-user"></i></a>
+    <button type="button" class="rounded-pill border-0 mr-2 subscribe">SUSBCRIBE ></button>
+    <button type="button" class="navbar-toggler opacity-75 p-0 text-white" data-toggle="collapse" data-target="#menu-content" aria-controls="menu-content" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="menu-content">
     </div>
   </nav>
-
-  <div class="page">
-    <main>
-      <aside class="mt-0">
-        <h1>TOP STORY</h1>
-        <section class="d-flex flex-column">
-          <figure class="position-relative">
-            <figcaption class="fixed-bottom position-absolute">POLITICS</figcaption>
-            <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
-          </figure>
-          <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
-          <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
-        </section>
-      </aside>
-      <aside>
-        <h1>FEATURED STORIES</h1>
-        <section class="d-flex flex-column">
-          <figure class="position-relative">
-            <figcaption class="fixed-bottom position-absolute">POLITICS</figcaption>
-            <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
-          </figure>
-          <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
-          <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
-        </section>
-        <section class="d-flex flex-column">
-          <figure class="position-relative">
-            <figcaption class="fixed-bottom position-absolute">U.S.</figcaption>
-            <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
-          </figure>
-          <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
-          <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
-        </section>
-        <section class="d-flex flex-column">
-          <figure class="position-relative">
-            <figcaption class="fixed-bottom position-absolute">U.S.</figcaption>
-            <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
-          </figure>
-          <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
-          <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
-        </section>
-        <section class="d-flex flex-column">
-          <figure class="position-relative">
-            <figcaption class="fixed-bottom position-absolute">U.S.</figcaption>
-            <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
-          </figure>
-          <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
-          <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
-        </section>
-        <section class="d-flex flex-column">
-          <figure class="position-relative">
-            <figcaption class="fixed-bottom position-absolute">U.S.</figcaption>
-            <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
-          </figure>
-          <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
-          <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
-        </section>
-      </aside>
-    </main>
-
-
-    <aside class="debate">
-      <h1>THE DEBATE</h1>
-      <section class="d-flex flex-row debate-top">
-        <img src="assets/josh-hammer.png" alt="#">
-        <div class="d-flex flex-column">
-          <h1>Should Trump Concede? Yes</h1>
-          <h2>BY <b>JONATHAN TOBIN</b></h2>
-        </div>
-      </section>
-      <div class="position-relative debate-vs">
-        <div class="position-absolute d-flex align-items-center justify-content-center">
-          <span>VS</span>
+  <main class="bg-light container-fluid">
+    <div class="row">
+      <div class="col-md-6 p-0 order-md-1 col-lg-4">
+        <div class="sticky-top sticky-column">
+          <section class="bg-white p-4 mb-4 border-bottom m-md-0 pb-md-0">
+            <h1 class="text-secondary">TOP STORY</h1>
+            <article>
+              <figure class="position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-1">POLITICS</figcaption>
+                <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+              </figure>
+              <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+              <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+            </article>
+          </section>
+          <!-- HERE STARTS THE DESKTOP COPY OF MY-TURN -->
+          <section class="bg-white p-4 mb-4 border-bottom d-none d-md-block m-md-0 pb-md-0">
+            <h1 class="text-secondary">MY TURN</h1>
+            <article>
+              <figure>
+                <img src="assets/coronavirus-pandemic-mini-stroke-hospitals.jpg" alt="#">
+              </figure>
+              <h2 class="text-secondary pb-4 pt-1 h1">'I'm 23, I Had a Mini Stroke Days After Contracting COVID'</h2>
+            </article>
+            <article>
+              <figure>
+                <img src="assets/coronavirus-pandemic-mini-stroke-hospitals.jpg" alt="#">
+              </figure>
+              <h2 class="text-secondary pb-4 pt-1 h1">'I'm 23, I Had a Mini Stroke Days After Contracting COVID'</h2>
+            </article>
+            <article>
+              <figure>
+                <img src="assets/coronavirus-pandemic-mini-stroke-hospitals.jpg" alt="#">
+              </figure>
+              <h2 class="text-secondary pb-4 pt-1 h1">'I'm 23, I Had a Mini Stroke Days After Contracting COVID'</h2>
+            </article>
+            <h1 class="text-secondary">CULTURE &amp; TRAVEL</h1>
+            <article>
+              <figure class="position-relative">
+                <figcaption class="position-absolute fixed-bottom p-1 fc2">TRAVEL</figcaption>
+                <img class="pb-1" src="assets/36-dominican-republic.jpg" alt="#">
+              </figure>
+              <h2 class="text-secondary pb-4 pt-1 h1">Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+            </article>
+            <article>
+              <figure class="position-relative">
+                <figcaption class="position-absolute fixed-bottom p-1 fc2">TRAVEL</figcaption>
+                <img class="pb-1" src="assets/36-dominican-republic.jpg" alt="#">
+              </figure>
+              <h2 class="text-secondary pb-4 pt-1 h1">Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+            </article>
+            <article>
+              <figure class="position-relative">
+                <figcaption class="position-absolute fixed-bottom p-1 fc2">TRAVEL</figcaption>
+                <img class="pb-1" src="assets/36-dominican-republic.jpg" alt="#">
+              </figure>
+              <h2 class="text-secondary pb-4 pt-1 h1">Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+            </article>
+          </section>
+          <!-- HERE STARTS THE DESKTOP COPY OF MORE-STORIES -->
+          <section class="bg-white p-4 mb-4 border-bottom d-none d-md-block">
+            <h1 class="text-secondary">MORE STORIES</h1>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+          </section>
         </div>
       </div>
-      <section class="d-flex flex-row justify-content-between debate-bottom">
-        <div class="d-flex flex-column">
-          <h1>Should Trump Concede? Not Yet</h1>
-          <h2>BY <b>SPENCER KLAVAN</b></h2>
+      <div class="col-md-6 p-0 order-md-0 col-lg-4">
+        <div class="sticky-top sticky-column">
+          <section class="bg-white p-4 mb-4 border-bottom m-md-0 pb-md-0">
+            <h1 class="text-secondary">FEATURED STORIES</h1>
+            <article>
+              <figure class="position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-1">POLITICS</figcaption>
+                <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+              </figure>
+              <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+              <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+            </article>
+            <article>
+              <figure class="position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-1">U.S.</figcaption>
+                <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+              </figure>
+              <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+              <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+            </article>
+            <article>
+              <figure class="position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-1">U.S.</figcaption>
+                <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+              </figure>
+              <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+              <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+            </article>
+            <article>
+              <figure class="position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-1">POLITICS</figcaption>
+                <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+              </figure>
+              <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+              <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+            </article>
+            <article>
+              <figure class="position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-1">POLITICS</figcaption>
+                <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+              </figure>
+              <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+              <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+            </article>
+          </section>
+          <!-- HERE STARTS THE DESKTOP COPY OF SPONSORED INSIGHT -->
+          <section class="bg-white pt-4 pl-4 pr-4 mb-4 border-bottom d-none d-md-block m-md-0 pb-md-0">
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">RANKINGS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">STEM</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">RANKINGS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">RANKINGS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+          </section>
         </div>
-        <img class="m-0" src="assets/josh-hammer.png" alt="#">
-      </section>
-    </aside>
-
-    <aside class="opinion">
-      <h1>OPINION</h1>
-      <section class="d-flex flex-row">
-        <img src="assets/josh-hammer.png" alt="#">
-        <div class="d-flex flex-column">
-          <h1>Biden Says He'll Take on Structural Inequality. You Need to Hold Him to It</h1>
-          <h2>BY <b>ROBERT REICH</b></h2>
+      </div>
+      <div class="mt-4 mt-md-0 col-md-12 p-0 order-md-1 col-lg-4">
+        <div class="sticky-top sticky-column">
+          <section class="bg-white p-4 mb-4 border-bottom m-md-0 pb-md-0">
+            <h1 class="text-secondary">THE DEBATE</h1>
+            <article class="d-flex border-top pt-2 pb-2 debate-top">
+              <img class="db-img mr-3" src="assets/josh-hammer.png" alt="#">
+              <div class="d-flex flex-column">
+                <h2 class="h1">Should Trump Concede? Yes</h2>
+                <p class="text-secondary">BY <b>JONATHAN TOBIN</b></p>
+              </div>
+            </article>
+            <div class="position-relative debate-vs mt-3 mb-3 border-top border-bottom">
+              <div class="position-absolute d-flex align-items-center justify-content-center bg-dark">
+                <span class="text-white">VS</span>
+              </div>
+            </div>
+            <article class="d-flex border-bottom pt-2 pb-2 debate-bottom justify-content-between">
+              <div class="d-flex flex-column">
+                <h2 class="h1">Should Trump Concede? Not Yet!</h2>
+                <p class="text-secondary">BY <b>JONATHAN TOBIN</b></p>
+              </div>
+              <img class="db-img" src="assets/josh-hammer.png" alt="#">
+            </article>
+          </section>
+          <section class="bg-white p-4 mb-4 border-bottom m-md-0 pb-md-0">
+            <h1 class="text-secondary">OPINION</h1>
+            <article class="d-flex border-bottom pt-2 pb-2">
+              <img class="db-img mr-3" src="assets/josh-hammer.png" alt="#">
+              <div class="d-flex flex-column">
+                <h2 class="h1">Should Trump Concede? Yes</h2>
+                <p class="text-secondary">BY <b>JONATHAN TOBIN</b></p>
+              </div>
+            </article>
+            <article class="d-flex border-bottom pt-2 pb-2">
+              <img class="db-img mr-3" src="assets/josh-hammer.png" alt="#">
+              <div class="d-flex flex-column">
+                <h2 class="h1">Should Trump Concede? Yes</h2>
+                <p class="text-secondary">BY <b>JONATHAN TOBIN</b></p>
+              </div>
+            </article>
+            <article class="d-flex border-bottom pt-2 pb-2">
+              <img class="db-img mr-3" src="assets/josh-hammer.png" alt="#">
+              <div class="d-flex flex-column">
+                <h2 class="h1">Should Trump Concede? Yes</h2>
+                <p class="text-secondary">BY <b>JONATHAN TOBIN</b></p>
+              </div>
+            </article>
+            <article class="d-flex border-bottom pt-2 pb-2">
+              <img class="db-img mr-3" src="assets/josh-hammer.png" alt="#">
+              <div class="d-flex flex-column">
+                <h2 class="h1">Should Trump Concede? Yes</h2>
+                <p class="text-secondary">BY <b>JONATHAN TOBIN</b></p>
+              </div>
+            </article>
+            <article class="d-flex border-bottom pt-2 pb-2">
+              <img class="db-img mr-3" src="assets/josh-hammer.png" alt="#">
+              <div class="d-flex flex-column">
+                <h2 class="h1">Should Trump Concede? Yes</h2>
+                <p class="text-secondary">BY <b>JONATHAN TOBIN</b></p>
+              </div>
+            </article>
+            <article class="d-flex border-bottom pt-2 pb-2">
+              <img class="db-img mr-3" src="assets/josh-hammer.png" alt="#">
+              <div class="d-flex flex-column">
+                <h2 class="h1">Should Trump Concede? Yes</h2>
+                <p class="text-secondary">BY <b>JONATHAN TOBIN</b></p>
+              </div>
+            </article>
+            <article class="d-flex pt-2 pb-2">
+              <img class="db-img mr-3" src="assets/josh-hammer.png" alt="#">
+              <div class="d-flex flex-column">
+                <h2 class="h1">Should Trump Concede? Yes</h2>
+                <p class="text-secondary">BY <b>JONATHAN TOBIN</b></p>
+              </div>
+            </article>
+          </section>
+          <!-- HERE STARTS THE DESKTOP COPY OF SPONSORED INSIGHT (V2) -->
+          <section class="bg-white pt-4 pl-4 pr-4 mb-4 border-bottom d-none d-md-block m-md-0 pb-md-0">
+            <article class="mb-4 mw-md-330 ml-md-auto mr-md-auto">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <form class="d-flex flex-column border rounded bg-light p-3 mb-4 ml-auto mr-auto form">
+              <figure class="d-flex align-items-center">
+                <img class="logo-simple mr-2" src="assets/logo.svg" alt="#">
+                <figcaption>START YOUR DAY WITH OUR TOP 5 ARTICLES</figcaption>
+              </figure>
+              <input class="rounded border mb-1" type="email" placeholder="Email Address">
+              <button class="border-0 rounded text-white p-1" type="button">FREE SIGN UP ></button>
+            </form>
+            <article class="mb-4 mw-md-330 ml-md-auto mr-md-auto">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED BY BERLIN PARTNERS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4 mw-md-330 ml-md-auto mr-md-auto">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4 mw-md-330 ml-md-auto mr-md-auto">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">RANKINGS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4 mw-md-330 ml-md-auto mr-md-auto">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4 mw-md-330 ml-md-auto mr-md-auto">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">RANKINGS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4 mw-md-330 ml-md-auto mr-md-auto">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SURVEY</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4 mw-md-330 ml-md-auto mr-md-auto">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">RANKINGS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+          </section>
+          <!-- HERE STARTS THE MOBILE VERSION OF SPONSORED INSIGTHS -->
+          <section class="bg-white pt-4 pl-4 pr-4 mb-4 border-bottom d-md-none">
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">RANKINGS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">STEM</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">RANKINGS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">RANKINGS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+          </section>
+          <!-- HERE STARTS THE MOBILE VERSION OF MORE-STORIES -->
+          <section class="bg-white p-4 mb-4 border-bottom d-md-none">
+            <h1 class="text-secondary">MORE STORIES</h1>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+            <article class="border-top pt-3 clearfix">
+              <img class="float-left w-25 mr-3" src="assets/trump.jpg" alt="#">
+              <h2 class="h2">Biden Faces Inauguration During Worst of America's COVID Pandemic</h2>
+              <p>U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
+            </article>
+          </section>
+          <!-- HERE STARTS THE MOBILE VERSION OF MY-TURN -->
+          <section class="bg-white pt-4 pl-4 pr-4 d-md-none">
+            <h1 class="text-secondary">MY TURN</h1>
+            <article>
+              <figure>
+                <img src="assets/coronavirus-pandemic-mini-stroke-hospitals.jpg" alt="#">
+              </figure>
+              <h2 class="text-secondary pb-4 pt-1 h1">'I'm 23, I Had a Mini Stroke Days After Contracting COVID'</h2>
+            </article>
+            <article>
+              <figure>
+                <img src="assets/coronavirus-pandemic-mini-stroke-hospitals.jpg" alt="#">
+              </figure>
+              <h2 class="text-secondary pb-4 pt-1 h1">'I'm 23, I Had a Mini Stroke Days After Contracting COVID'</h2>
+            </article>
+            <article>
+              <figure>
+                <img src="assets/coronavirus-pandemic-mini-stroke-hospitals.jpg" alt="#">
+              </figure>
+              <h2 class="text-secondary pb-4 pt-1 h1">'I'm 23, I Had a Mini Stroke Days After Contracting COVID'</h2>
+            </article>
+            <h1 class="text-secondary">CULTURE &amp; TRAVEL</h1>
+            <article>
+              <figure class="position-relative">
+                <figcaption class="position-absolute fixed-bottom p-1 fc2">TRAVEL</figcaption>
+                <img class="pb-1" src="assets/36-dominican-republic.jpg" alt="#">
+              </figure>
+              <h2 class="text-secondary pb-4 pt-1 h1">Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+            </article>
+            <article>
+              <figure class="position-relative">
+                <figcaption class="position-absolute fixed-bottom p-1 fc2">TRAVEL</figcaption>
+                <img class="pb-1" src="assets/36-dominican-republic.jpg" alt="#">
+              </figure>
+              <h2 class="text-secondary pb-4 pt-1 h1">Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+            </article>
+            <article>
+              <figure class="position-relative">
+                <figcaption class="position-absolute fixed-bottom p-1 fc2">TRAVEL</figcaption>
+                <img class="pb-1" src="assets/36-dominican-republic.jpg" alt="#">
+              </figure>
+              <h2 class="text-secondary pt-1 mb-0 h1">Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+            </article>
+          </section>
+          <!-- HERE STARTS THE MOBILE VERSION OF SPONSORED INSIGHT (V2) -->
+          <section class="bg-white p-4 mb-4 border-bottom d-md-none">
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <form class="d-flex flex-column border rounded bg-light p-3 mb-4 ml-auto mr-auto form">
+              <figure class="d-flex align-items-center">
+                <img class="logo-simple mr-2" src="assets/logo.svg" alt="#">
+                <figcaption>START YOUR DAY WITH OUR TOP 5 ARTICLES</figcaption>
+              </figure>
+              <input class="rounded border mb-1" type="email" placeholder="Email Address">
+              <button class="border-0 rounded text-white p-1" type="button">FREE SIGN UP ></button>
+            </form>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED BY BERLIN PARTNERS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">RANKINGS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SPONSORED INSIGHT</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">RANKINGS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">SURVEY</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+            <article class="mb-4">
+              <figure class="mb-0 position-relative">
+                <figcaption class="position-absolute fixed-bottom bg-light p-2 text-primary">RANKINGS</figcaption>
+                <img src="assets/cardi-b.jpg" alt="#">
+              </figure>
+              <div class="p-4 border">
+                <h2>Would You Like a Career That Will Make a Real Difference?</h2>
+                <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
+              </div>
+            </article>
+          </section>
         </div>
-      </section>
-      <section class="d-flex flex-row">
-        <img src="assets/josh-hammer.png" alt="#">
-        <div class="d-flex flex-column">
-          <h1>Biden Says He'll Take on Structural Inequality. You Need to Hold Him to It</h1>
-          <h2>BY <b>ROBERT REICH</b></h2>
-        </div>
-      </section>
-      <section class="d-flex flex-row">
-        <img src="assets/josh-hammer.png" alt="#">
-        <div class="d-flex flex-column">
-          <h1>Biden Says He'll Take on Structural Inequality. You Need to Hold Him to It</h1>
-          <h2>BY <b>ROBERT REICH</b></h2>
-        </div>
-      </section>
-      <section class="d-flex flex-row">
-        <img src="assets/josh-hammer.png" alt="#">
-        <div class="d-flex flex-column">
-          <h1>Biden Says He'll Take on Structural Inequality. You Need to Hold Him to It</h1>
-          <h2>BY <b>ROBERT REICH</b></h2>
-        </div>
-      </section>
-      <section class="d-flex flex-row">
-        <img src="assets/josh-hammer.png" alt="#">
-        <div class="d-flex flex-column">
-          <h1>Biden Says He'll Take on Structural Inequality. You Need to Hold Him to It</h1>
-          <h2>BY <b>ROBERT REICH</b></h2>
-        </div>
-      </section>
-      <section class="d-flex flex-row">
-        <img src="assets/josh-hammer.png" alt="#">
-        <div class="d-flex flex-column">
-          <h1>Biden Says He'll Take on Structural Inequality. You Need to Hold Him to It</h1>
-          <h2>BY <b>ROBERT REICH</b></h2>
-        </div>
-      </section>
-      <section class="d-flex flex-row">
-        <img src="assets/josh-hammer.png" alt="#">
-        <div class="d-flex flex-column">
-          <h1>Biden Says He'll Take on Structural Inequality. You Need to Hold Him to It</h1>
-          <h2>BY <b>ROBERT REICH</b></h2>
-        </div>
-      </section>
-    </aside>
-
-    <aside class="sponsored">
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
+      </div>
+    </div>
+    <section class="bg-white p-4 mb-4 border-bottom">
+      <article class="d-flex flex-column m-0 p-0">
+        <figure class="d-flex align-items-center justify-content-center mb-2">
+          <img class="logo-simple mr-2" src="assets/logo.svg" alt="#">
+          <figcaption class="text-dark">
+            <h2 class="h1 m-0">IN THE MAGAZINE</h2>
+          </figcaption>
         </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-    </aside>
-
-    <aside class="more-stories">
-      <h1>MORE STORIES</h1>
-      <section class="clearfix">
-        <img class="float-left" src="assets/trump.jpg" alt="#">
-        <h1 class="d-inline">Biden Faces Inauguration During Worst of America's COVID Pandemic</h1>
-        <p class="d-block m-0">U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
-      </section>
-      <section class="clearfix">
-        <img class="float-left" src="assets/trump.jpg" alt="#">
-        <h1 class="d-inline">Biden Faces Inauguration During Worst of America's COVID Pandemic</h1>
-        <p class="d-block m-0">U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
-      </section>
-      <section class="clearfix">
-        <img class="float-left" src="assets/trump.jpg" alt="#">
-        <h1 class="d-inline">Biden Faces Inauguration During Worst of America's COVID Pandemic</h1>
-        <p class="d-block m-0">U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
-      </section>
-      <section class="clearfix">
-        <img class="float-left" src="assets/trump.jpg" alt="#">
-        <h1 class="d-inline">Biden Faces Inauguration During Worst of America's COVID Pandemic</h1>
-        <p class="d-block m-0">U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
-      </section>
-      <section class="clearfix">
-        <img class="float-left" src="assets/trump.jpg" alt="#">
-        <h1 class="d-inline">Biden Faces Inauguration During Worst of America's COVID Pandemic</h1>
-        <p class="d-block m-0">U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
-      </section>
-      <section class="clearfix">
-        <img class="float-left" src="assets/trump.jpg" alt="#">
-        <h1 class="d-inline">Biden Faces Inauguration During Worst of America's COVID Pandemic</h1>
-        <p class="d-block m-0">U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
-      </section>
-      <section class="clearfix">
-        <img class="float-left" src="assets/trump.jpg" alt="#">
-        <h1 class="d-inline">Biden Faces Inauguration During Worst of America's COVID Pandemic</h1>
-        <p class="d-block m-0">U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
-      </section>
-      <section class="clearfix">
-        <img class="float-left" src="assets/trump.jpg" alt="#">
-        <h1 class="d-inline">Biden Faces Inauguration During Worst of America's COVID Pandemic</h1>
-        <p class="d-block m-0">U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
-      </section>
-      <section class="clearfix">
-        <img class="float-left" src="assets/trump.jpg" alt="#">
-        <h1 class="d-inline">Biden Faces Inauguration During Worst of America's COVID Pandemic</h1>
-        <p class="d-block m-0">U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
-      </section>
-      <section class="clearfix">
-        <img class="float-left" src="assets/trump.jpg" alt="#">
-        <h1 class="d-inline">Biden Faces Inauguration During Worst of America's COVID Pandemic</h1>
-        <p class="d-block m-0">U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
-      </section>
-      <section class="clearfix">
-        <img class="float-left" src="assets/trump.jpg" alt="#">
-        <h1 class="d-inline">Biden Faces Inauguration During Worst of America's COVID Pandemic</h1>
-        <p class="d-block m-0">U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
-      </section>
-      <section class="clearfix">
-        <img class="float-left" src="assets/trump.jpg" alt="#">
-        <h1 class="d-inline">Biden Faces Inauguration During Worst of America's COVID Pandemic</h1>
-        <p class="d-block">U.S. COVID-19 numbers are getting worse by the week and total deaths are projected to surpass 300,000 by the end of December before President-elect Joe Biden takes office.</p>
-      </section>
-    </aside>
-    <aside class="my-turn">
-      <h1>MY TURN</h1>
-      <section class="d-flex flex-column turn">
-        <img src="assets/coronavirus-pandemic-mini-stroke-hospitals.jpg" alt="#">
-        <h1>'I'm 23, I Had a Mini Stroke Days After Contracting COVID'</h1>
-      </section>
-      <section class="d-flex flex-column turn">
-        <img src="assets/coronavirus-pandemic-mini-stroke-hospitals.jpg" alt="#">
-        <h1>'I'm 23, I Had a Mini Stroke Days After Contracting COVID'</h1>
-      </section>
-      <section class="d-flex flex-column turn">
-        <img src="assets/coronavirus-pandemic-mini-stroke-hospitals.jpg" alt="#">
-        <h1>'I'm 23, I Had a Mini Stroke Days After Contracting COVID'</h1>
-      </section>
-      <h1>CULTURE & TRAVEL</h1>
-      <section class="d-flex flex-column turn">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">TRAVEL</figcaption>
-          <img src="assets/36-dominican-republic.jpg" alt="#">
-        </figure>
-        <h1>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h1>
-      </section>
-      <section class="d-flex flex-column turn">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">TRAVEL</figcaption>
-          <img src="assets/36-dominican-republic.jpg" alt="#">
-        </figure>
-        <h1>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h1>
-      </section>
-      <section class="d-flex flex-column turn">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">MUSIC</figcaption>
-          <img src="assets/36-dominican-republic.jpg" alt="#">
-        </figure>
-        <h1>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h1>
-      </section>
-      <section class="d-flex flex-column sponsored">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <form class="d-flex flex-column subscribe-form max-form">
-        <div class="d-flex flex-row align-items-center">
-          <img class="logo-simple" src="assets/logo.svg" alt="#">
-          <h2 class="subscribe-form-txt">START YOUR DAY WITH OUR TOP 5 ARTICLES</h2>
-        </div><br>
-        <input class="subscribe-form-box" type="email" placeholder="Email Address">
-        <button type="button" class="subscribe-form-button"> FREE SIGN UP > </button>
-      </form>
-      <section class="d-flex flex-column sponsored">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column sponsored">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column sponsored">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">RANKINGS</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column sponsored">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column sponsored">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SPONSORED INSIGHT</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column sponsored">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">RANKINGS</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-      <section class="d-flex flex-column sponsored">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">SURVEY</figcaption>
-          <img src="assets/cardi-b.jpg" alt="#">
-        </figure>
-        <div class="info">
-          <h2>Would You Like a Career That Will Make a Real Difference?</h2>
-          <p>Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-        </div>
-      </section>
-    </aside>
-    <aside>
-      <section class="d-flex flex-column magazine m-0 p-0">
-        <div class="d-flex flex-row justify-content-center align-items-center">
-          <img class="logo-simple" src="assets/logo.svg" alt="#">
-          <h1 class="magazine-title">IN THE MAGAZINE</h1>
-        </div>
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">DECEMBER 11 ISSUE</figcaption>
+        <figure class="mb-0 position-relative">
+          <figcaption class="position-absolute fixed-bottom bg-light p-2">DECEMBER 11 ISSUE</figcaption>
           <img src="assets/cover-december-04-11-2020.jpg" alt="#">
         </figure>
-      </section>
-      <div class="see-all">SEE ALL FEATURES ></div>
-      <section class="d-flex flex-column extra-content p-0">
-        <img src="assets/cover-fe-vaccine-moderna.jpg" alt="#">
-        <div class="extra-content-bar">
-          <span class="extra-content-txt1">COVER</span><span class="extra-content-txt2">HEALTH</span>
-        </div>
-        <h1>Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</h1>
-      </section>
-      <section class="d-flex flex-column extra-content p-0">
-        <img src="assets/cover-fe-vaccine-moderna.jpg" alt="#">
-        <div class="extra-content-bar">
-          <span class="extra-content-txt1">PERISCOPE</span><span class="extra-content-txt2">U.S.</span>
-        </div>
-        <h1>Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</h1>
-      </section>
-      <section class="d-flex flex-column extra-content p-0">
-        <img src="assets/cover-fe-vaccine-moderna.jpg" alt="#">
-        <div class="extra-content-bar">
-          <span class="extra-content-txt1">PERISCOPE</span><span class="extra-content-txt2">U.S.</span>
-        </div>
-        <h1>Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</h1>
-      </section>
-      <section class="d-flex flex-column extra-content p-0">
-        <img src="assets/cover-fe-vaccine-moderna.jpg" alt="#">
-        <div class="extra-content-bar">
-          <span class="extra-content-txt1">DOWNTIME</span><span class="extra-content-txt2">CULTURE</span>
-        </div>
-        <h1>Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</h1>
-      </section>
-      <section class="d-flex flex-column extra-content p-0">
-        <img src="assets/cover-fe-vaccine-moderna.jpg" alt="#">
-        <div class="extra-content-bar">
-          <span class="extra-content-txt1">DOWNTIME</span><span class="extra-content-txt2">CULTURE</span>
-        </div>
-        <h1>Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</h1>
-      </section>
-      <section class="d-flex flex-column extra-content lineup">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">IN FOCUS</figcaption>
-          <img src="assets/lineup.jpg" alt="#">
+        <p class="h1 bg-light p-2 text-center">SEE ALL FEATURES ></p>
+      </article>
+      <article>
+        <figure>
+          <img src="assets/cover-fe-vaccine-moderna.jpg" alt="#">
+          <figcaption>
+            <p class="h1 mt-3 mb-3"><span class="bg-main text-white p-1 mr-2">COVER</span><span class="extra-content-txt2">HEALTH</span></p>
+          </figcaption>
         </figure>
-        <h1>LINEUP</h1>
-      </section>
-    </aside>
-
-    <aside>
-      <section class="d-flex flex-column magazine m-0 p-0">
-        <div class="d-flex flex-row justify-content-center align-items-center">
-          <img class="logo-simple" src="assets/logo.svg" alt="#">
-          <h1 class="magazine-title">EDITOR'S PICK</h1>
-        </div>
-      </section>
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">HEALTH</figcaption>
-          <img src="assets/dr-fauci-white-house-briefing-november-2020.jpg" alt="#">
+        <h2 class="h1 mb-4">Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</h2>
+      </article>
+      <article>
+        <figure>
+          <img src="assets/cover-fe-vaccine-moderna.jpg" alt="#">
+          <figcaption>
+            <p class="h1 mt-3 mb-3"><span class="bg-main text-white p-1 mr-2">FEATURES</span><span class="extra-content-txt2">POLITICS</span></p>
+          </figcaption>
         </figure>
-        <h2>William Shakespeare Becomes Second Person to Get Pfizer COVID Vaccine</h2>
-        <p>Shakespeare, who shares his name with the famous English playwright, has made history by becoming one of the first people to have the shot outside of clinical trials.</p>
-      </section>
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">NEWS</figcaption>
-          <img src="assets/dr-fauci-white-house-briefing-november-2020.jpg" alt="#">
+        <h2 class="h1 mb-4">Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</h2>
+      </article>
+      <article>
+        <figure>
+          <img src="assets/cover-fe-vaccine-moderna.jpg" alt="#">
+          <figcaption>
+            <p class="h1 mt-3 mb-3"><span class="bg-main text-white p-1 mr-2">PERISCOPE</span><span class="extra-content-txt2">BUSINESS</span></p>
+          </figcaption>
         </figure>
-        <h2>William Shakespeare Becomes Second Person to Get Pfizer COVID Vaccine</h2>
-        <p>Shakespeare, who shares his name with the famous English playwright, has made history by becoming one of the first people to have the shot outside of clinical trials.</p>
-      </section>
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">HEALTH</figcaption>
-          <img src="assets/dr-fauci-white-house-briefing-november-2020.jpg" alt="#">
+        <h2 class="h1 mb-4">Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</h2>
+      </article>
+      <article>
+        <figure>
+          <img src="assets/cover-fe-vaccine-moderna.jpg" alt="#">
+          <figcaption>
+            <p class="h1 mt-3 mb-3"><span class="bg-main text-white p-1 mr-2">PERISCOPE</span><span class="extra-content-txt2">CULTURE</span></p>
+          </figcaption>
         </figure>
-        <h2>William Shakespeare Becomes Second Person to Get Pfizer COVID Vaccine</h2>
-        <p>Shakespeare, who shares his name with the famous English playwright, has made history by becoming one of the first people to have the shot outside of clinical trials.</p>
-      </section>
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">U.S.</figcaption>
-          <img src="assets/dr-fauci-white-house-briefing-november-2020.jpg" alt="#">
+        <h2 class="h1 mb-4">Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</h2>
+      </article>
+      <article>
+        <figure>
+          <img src="assets/cover-fe-vaccine-moderna.jpg" alt="#">
+          <figcaption>
+            <p class="h1 mt-3 mb-3"><span class="bg-main text-white p-1 mr-2">PERISCOPE</span><span class="extra-content-txt2">CULTURE</span></p>
+          </figcaption>
         </figure>
-        <h2>William Shakespeare Becomes Second Person to Get Pfizer COVID Vaccine</h2>
-        <p>Shakespeare, who shares his name with the famous English playwright, has made history by becoming one of the first people to have the shot outside of clinical trials.</p>
-      </section>
-      <section class="d-flex flex-column">
+        <h2 class="h1 mb-4">Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</h2>
+      </article>
+      <article>
         <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">NEWS</figcaption>
-          <img src="assets/dr-fauci-white-house-briefing-november-2020.jpg" alt="#">
+          <figcaption class="position-absolute fixed-bottom bg-main p-2 text-white">IN FOCUS</figcaption>
+          <img class="pb-1" src="assets/cover-fe-vaccine-moderna.jpg" alt="#">
         </figure>
-        <h2>William Shakespeare Becomes Second Person to Get Pfizer COVID Vaccine</h2>
-        <p>Shakespeare, who shares his name with the famous English playwright, has made history by becoming one of the first people to have the shot outside of clinical trials.</p>
-      </section>
-      <section class="d-flex flex-column">
+        <h2 class="h1 mb-4">LINEUP</h2>
+      </article>
+    </section>
+    <section class="bg-white p-4 mb-4 border-bottom">
+      <article class="d-flex flex-column m-0 p-0">
+        <figure class="d-flex align-items-center justify-content-center mb- border-bottom pb-3 mb-3">
+          <img class="logo-simple mr-2" src="assets/logo.svg" alt="#">
+          <figcaption class="text-dark">
+            <h2 class="h1 m-0">EDITOR'S PICK</h2>
+          </figcaption>
+        </figure>
+      </article>
+      <article>
         <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">NEWS</figcaption>
-          <img src="assets/dr-fauci-white-house-briefing-november-2020.jpg" alt="#">
+          <figcaption class="position-absolute fixed-bottom bg-light p-2">NEWS</figcaption>
+          <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
         </figure>
-        <h2>William Shakespeare Becomes Second Person to Get Pfizer COVID Vaccine</h2>
-        <p>Shakespeare, who shares his name with the famous English playwright, has made history by becoming one of the first people to have the shot outside of clinical trials.</p>
-      </section>
-      <section class="d-flex flex-column">
+        <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+        <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+      </article>
+      <article>
         <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">CULTURE</figcaption>
-          <img src="assets/dr-fauci-white-house-briefing-november-2020.jpg" alt="#">
+          <figcaption class="position-absolute fixed-bottom bg-light p-2">HEALTH</figcaption>
+          <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
         </figure>
-        <h2>William Shakespeare Becomes Second Person to Get Pfizer COVID Vaccine</h2>
-        <p>Shakespeare, who shares his name with the famous English playwright, has made history by becoming one of the first people to have the shot outside of clinical trials.</p>
-      </section>
-      <section class="d-flex flex-column">
+        <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+        <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+      </article>
+      <article>
         <figure class="position-relative">
-          <figcaption class="fixed-bottom position-absolute">POLITICS</figcaption>
-          <img src="assets/dr-fauci-white-house-briefing-november-2020.jpg" alt="#">
+          <figcaption class="position-absolute fixed-bottom bg-light p-2">NEWS</figcaption>
+          <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
         </figure>
-        <h2>William Shakespeare Becomes Second Person to Get Pfizer COVID Vaccine</h2>
-        <p>Shakespeare, who shares his name with the famous English playwright, has made history by becoming one of the first people to have the shot outside of clinical trials.</p>
-      </section>
-    </aside>
-    <aside>
-      <section class="subscribe-block">
-        <h1 class="m-0">SUBSCRIBE</h1>
-        <div class="subscribe-block-content">
-          <div class="position-relative mx-auto subscribe-block-images">
+        <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+        <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+      </article>
+      <article>
+        <figure class="position-relative">
+          <figcaption class="position-absolute fixed-bottom bg-light p-2">TECH &amp; SCIENCE</figcaption>
+          <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+        </figure>
+        <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+        <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+      </article>
+      <article>
+        <figure class="position-relative">
+          <figcaption class="position-absolute fixed-bottom bg-light p-2">NEWS</figcaption>
+          <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+        </figure>
+        <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+        <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+      </article>
+      <article>
+        <figure class="position-relative">
+          <figcaption class="position-absolute fixed-bottom bg-light p-2">U.S.</figcaption>
+          <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+        </figure>
+        <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+        <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+      </article>
+      <article>
+        <figure class="position-relative">
+          <figcaption class="position-absolute fixed-bottom bg-light p-2">U.S.</figcaption>
+          <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+        </figure>
+        <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+        <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+      </article>
+      <article>
+        <figure class="position-relative">
+          <figcaption class="position-absolute fixed-bottom bg-light p-2">U.S.</figcaption>
+          <img src="assets/donald-trump-georgia-loeffler-perdue-senate-republican.jpg" alt="#">
+        </figure>
+        <h2>Stimulus Gains Renewed Urgency Amid U.S. COVID Surge, Weak Jobs Data</h2>
+        <p>Lawmakers from both parties stressed the need to pass a stimulus bill by the end of the year as Congress considers a $900 billion bipartisan proposal that does not include checks.</p>
+      </article>
+    </section>
+    <div>
+      <section class="bg-white p-4 mb-4 border-bottom">
+        <h1 class="text-main">SUBSCRIBE</h1>
+        <article class="bg-light p-4 subscribe-block">
+          <div class="position-relative mx-auto subscribe-block-images mb-2">
             <div class="position-absolute subscribe-block-image1"><img src="assets/cover-november-27-2020.jpg" alt="#"></div>
             <div class="position-absolute subscribe-block-image2"><img src="assets/cover-december-04-11-2020.jpg" alt="#"></div>
           </div>
           <h2 class="text-center">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h2>
           <p class="text-center">All Access + Weekly Delivery.<br>Choose A Membership That's Perfect for You!</p>
-          <form class="d-flex flex-column p-0 mb-0 subscribe-form">
-            <button type="button" class="subscribe-form-button w-auto mx-auto">SUBSCRIBE ></button>
+          <form class="d-flex flex-column p-0 mb-0 ml-auto mr-auto subscribe-form">
+            <button class="border-0 rounded text-white p-2 m-auto" type="button">SUBSCRIBE ></button>
           </form>
-        </div>
+        </article>
       </section>
-    </aside>
-    <aside class="newsletter">
-      <h1>NEWSLETTER</h1>
-      <section class="d-flex flex-column">
-        <figure class="position-relative">
-          <img src="assets/kelly-loeffler-debates-raphael-warnock-georgia.png" alt="#">
-        </figure>
-        <div class="info">
-          <h2 class="text-center">The Starting 5</h2>
-          <p class="text-center">Stop thinking about being a teacher and get started on your path to one of the most rewarding careers in the world. Find out where to get qualified.</p>
-          <form class="d-flex p-0 m-0 bg-transparent subscribe-form">
-            <input class="flex-fill subscribe-form-box" type="email" placeholder="Email Address" data-brackets-id="10423">
-            <button type="button" class="flex-fill subscribe-form-button mx-auto">FREE SIGN UP ></button>
-          </form>
-        </div>
+      <section class="bg-white p-4 mb-4 border-bottom">
+        <h1 class="text-main">NEWSLETTER</h1>
+        <article class="mb-4">
+          <figure class="mb-0 position-relative">
+            <img src="assets/kelly-loeffler-debates-raphael-warnock-georgia.png" alt="#">
+          </figure>
+          <div class="p-3 border">
+            <h2 class="text-center">THE STARTING 5</h2>
+            <p class="text-center subscribe-block">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+            <form class="d-flex p-0 m-0 w-100 bg-transparent subscribe-block">
+              <input class="flex-fill w-50 border rounded-left" type="email" placeholder="Email Address" data-brackets-id="10423">
+              <button type="button" class="flex-fill border-0 rounded-right text-white p-2 w-50 text-nowrap">FREE SIGN UP ></button>
+            </form>
+          </div>
+        </article>
       </section>
-    </aside>
-  </div>
-  <footer>
-    <div class="d-flex flex-column social">
-      <p class="logo">Newsweek</p>
-      <p class="copyright m-0">© 2020 NEWSWEEK DIGITAL LLC</p>
-      <div class="media-icons">
+    </div>
+  </main>
+  <footer class="bg-white text-secondary pt-5 pr-3 pl-3 pb-4">
+    <div class="d-flex flex-column border-bottom flex-md-row align-items-md-baseline justify-content-md-between">
+      <p class="mb-4 text-main logo-text">Newsweek</p>
+      <p class="mb-2 copyright">© 2020 NEWSWEEK DIGITAL LLC</p>
+      <div class="mb-2 media-icons">
         <i class="p-0 fab fa-facebook"></i>
         <i class="p-0 fab fa-twitter"></i>
         <i class="p-0 fab fa-instagram"></i>
@@ -609,29 +920,29 @@
       </div>
     </div>
     <div class="d-flex editions">
-      <span><b>Editions</b>:</span>
-      <ul>
-        <li>U.S. Edition</li>
-        <li>日本</li>
-        <li>Pakistan</li>
-        <li>Polska</li>
-        <li>România</li>
+      <span class="mt-2 mr-3"><b>Editions</b>:</span>
+      <ul class="border-0 m-0 p-0">
+        <li class="d-inline-block mt-2 mr-3">U.S. Edition</li>
+        <li class="d-inline-block mt-2 mr-3">日本</li>
+        <li class="d-inline-block mt-2 mr-3">Pakistan</li>
+        <li class="d-inline-block mt-2 mr-3">Polska</li>
+        <li class="d-inline-block mt-2 mr-3">România</li>
       </ul>
     </div>
-    <div class="about">
-      <ul class="menu">
-        <li>About Us</li>
-        <li class="leaf">Corrections</li>
-        <li>Contact Us</li>
-        <li>Editorial Guidelines</li>
-        <li>Advertise</li>
-        <li>Copyright</li>
-        <li>Terms &amp; Conditions</li>
-        <li>Privacy Policy</li>
-        <li>Cookie Policy</li>
-        <li>Terms of Sale</li>
-        <li>Archive</li>
-        <li>Announcements</li>
+    <div>
+      <ul class="border-0 m-0 p-0">
+        <li class="d-inline-block mt-2 mr-3">About Us</li>
+        <li class="d-inline-block mt-2 mr-3">Corrections</li>
+        <li class="d-inline-block mt-2 mr-3">Contact Us</li>
+        <li class="d-inline-block mt-2 mr-3">Editorial Guidelines</li>
+        <li class="d-inline-block mt-2 mr-3">Advertise</li>
+        <li class="d-inline-block mt-2 mr-3">Copyright</li>
+        <li class="d-inline-block mt-2 mr-3">Terms &amp; Conditions</li>
+        <li class="d-inline-block mt-2 mr-3">Privacy Policy</li>
+        <li class="d-inline-block mt-2 mr-3">Cookie Policy</li>
+        <li class="d-inline-block mt-2 mr-3">Terms of Sale</li>
+        <li class="d-inline-block mt-2 mr-3">Archive</li>
+        <li class="d-inline-block mt-2 mr-3">Announcements</li>
       </ul>
     </div>
   </footer>
