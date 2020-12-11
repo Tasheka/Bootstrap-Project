@@ -3,6 +3,9 @@ $button-color: #ffe400;
 $third-color: #342;
 $third-background: #c2d4d7;
 $main-soft-gray: #d6d6d6;
+$sm: 767px;
+$md: 768px;
+$lg: 992px;
 
 @mixin arial($st, $fs, $lh) {
   font: #{$st} #{$fs}/#{$lh} Arial, Helvetica, sans-serif;
@@ -69,23 +72,42 @@ img {
 
 // Bootstrap, in it's infinite wisdom...
 #col {
-  &-1, &-2, &-3 {
+  &-1,
+  &-2,
+  &-3 {
     z-index: 0;
-    top: 2.875rem;
   }
 }
 
-nav, .navb {
+nav,
+.navb {
   background-color: $main-color;
 
   &-user {
     font-size: 1.25rem;
   }
 
-  &-subscribe {
+  &-subscribe,
+  &-login {
     @include roboto(bold, 0.8125rem, 1.5rem);
+
     background-color: $button-color;
+
+    @media (min-width: $lg) {
+      @include roboto(bold, 1.125rem, 1.875rem);
+    }
   }
+
+  @media (min-width: $lg) {
+    .logo-text {
+      font-size: 4.5rem;
+      letter-spacing: -0.4375rem;
+    }
+  }
+}
+
+.navb-2 {
+  @include roboto(bold, 1.1875rem, 1.5rem);
 }
 
 section {
@@ -145,7 +167,8 @@ section {
   // If you can prove me wrong, I will blindly change this, but
   // otherwise, please don't ask me to change it without a solid
   // alternative.
-  #debate-top, #debate-bottom {
+  #debate-top,
+  #debate-bottom {
     border-width: 0.25rem !important;
   }
 
@@ -238,7 +261,7 @@ footer {
 
 // The original site does this media query, which is not possible with
 // Bootstrap only (since it does not have max width, except for 100%)
-@media (min-width: 768px) {
+@media (min-width: $md) {
   .mw-md-330 {
     max-width: 20.625rem;
   }
@@ -257,7 +280,16 @@ footer {
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: $lg) {
+
+  // You can not change the text direction from Bootstrap using classes
+  // - https://gist.github.com/nurbek-ab/f5cdbdb350f418278794
+  .txt-lh-left {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: $sm) {
 
   // We need to remove the sticky from the first column when we are
   // on mobile to prevent the second column from crashing below the
