@@ -24,54 +24,25 @@ body {
   @include arial(normal, 0.8125rem, 1.125rem);
 }
 
-.left-nav {
-  @include roboto(bold, 13px, 18px);
-}
-
-.right-nav {
-  @include roboto(bold, 13px, 24px);
-}
-
-.nav2 {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.nav3 {
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.sear {
-  font-size: 17px;
-}
-
 img {
   width: 100%;
   height: auto;
-  display: cover;
-}
-
-.logo {
-  @include kadwa(bold, 28px, 0);
-
-  @media screen and (min-width: 992px) {
-    @include kadwa(bold, 56px, 0);
-  }
+  object-fit: cover;
 }
 
 .logo-text {
   @include kadwa(bold, 1.75rem, 0);
-
-  letter-spacing: -3px;
+  // The logo requires ad-hoc letter spacing to be the same size as
+  // the original logo when using Kadwa.
+  letter-spacing: -0.1875rem;
 }
 
+// This logo is fixed size, not responsive, so don't ask to make it
+// responsive.
 .logo-simple {
-  // This logo is fixed size, not responsive, so don't ask me to
-  // make it responsive.
   background-color: $main-color;
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 // Bootstrap 4 does not have any class for opacity.
@@ -79,13 +50,15 @@ img {
   opacity: 0.75;
 }
 
-// Bootstrap 3 does not have transformation classess
+// Bootstrap 3 does not have transformation classess.
 .transform-center {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
+// Bootstrap does not have the red color used as main color for this
+// web page.
 .bg-main {
   background-color: $main-color;
 }
@@ -94,24 +67,24 @@ img {
   color: $main-color;
 }
 
-// And again, bootstrap in their infinite and undebatable wisdom...
-.sticky-column {
-  z-index: 0 !important;
-  top: 42px;
+// Bootstrap, in it's infinite wisdom...
+#col {
+  &-1, &-2, &-3 {
+    z-index: 0;
+    top: 2.875rem;
+  }
 }
 
-nav {
+nav, .navb {
   background-color: $main-color;
 
-  .user {
+  &-user {
     font-size: 1.25rem;
   }
 
-  .subscribe {
+  &-subscribe {
     @include roboto(bold, 0.8125rem, 1.5rem);
-
     background-color: $button-color;
-    border-radius: 24%;
   }
 }
 
@@ -125,18 +98,18 @@ section {
       @include roboto(bold, 1.375rem, 1.5rem);
     }
 
-    figcaption {
+    .figcaption {
       @include roboto(bold, 1rem, 1rem);
       // This width and height is not available on bootstrap and it
       // is needed for the text to show correctly.
       width: max-content;
       height: max-content;
+      // Bootrstrap does not have the main color of the web site.
       color: $main-color;
+      // Bootstrap does not have opacity classes.
       opacity: 0.9;
-      // Needed because this will pass above the navbar. Someone, in
-      // their infinite wisdom, decided that the fixed class will
-      // have a z-index of 1030.
-      z-index: 1 !important;
+      // Bootstrap, in it's infinite wisdom.
+      z-index: 0;
     }
 
     .h1 {
@@ -157,42 +130,44 @@ section {
     // The debate image is squared, fixed width and height and,
     // therefore, not responsive.
     .db-img {
-      width: 63px;
-      height: 63px;
+      width: 4rem;
+      height: 4rem;
     }
   }
 
-  .debate-top {
-    // Bootstrap won't let me change the thickness of the border
-    // if I do not use the !important keyword.
-    //
-    // Bad practice, you said? Give me a solution.
-    border-top-width: 4px !important;
-  }
-
-  .debate-bottom {
-    border-bottom-width: 4px !important;
+  //I've been searching in the internet how to do this without
+  // !important, without success. See here:
+  // - https://stackoverflow.com/questions/48506610/bootstrap-4-border-utilities
+  // - https://o7planning.org/en/12029/bootstrap-borders-tutorial
+  // - https://www.codeply.com/go/ktnEeWExvh
+  // - https://o7planning.org/en/12029/bootstrap-borders-tutorial
+  //
+  // If you can prove me wrong, I will blindly change this, but
+  // otherwise, please don't ask me to change it without a solid
+  // alternative.
+  #debate-top, #debate-bottom {
+    border-width: 0.25rem !important;
   }
 
   // This debate "VS" thing needs to be pixel perfect. Anyway, it is
-  // responisve. Therefore, don't ask me to remove it.w
+  // responisve. Don't ask to remove this code.
   .debate-vs {
-    height: 3px;
+    height: 0.1875rem;
 
     div {
       @extend .transform-center;
 
-      width: 32px;
-      height: 32px;
+      width: 2rem;
+      height: 2rem;
       color: $main-soft-gray;
       border-radius: 50%;
     }
   }
 
-  // The form is responsive, but has a maximum width of 300px, which can not
-  // be done in Bootstrap.
+  // The form is responsive, but has a maximum width of 300px, which
+  // can not be done in Bootstrap.
   .form {
-    max-width: 300px;
+    max-width: 18.75rem;
   }
 
   form {
@@ -211,11 +186,11 @@ section {
     @include helvetica(300, 0.9375rem, 1.3125rem);
 
     &-images {
-      height: 227px;
+      height: 14.1875rem;
 
       div {
         height: inherit;
-        width: 170px;
+        width: 10.625rem;
       }
     }
 
@@ -232,7 +207,7 @@ section {
     }
 
     button {
-      @include roboto(bold, 1.125rem, 1.125rem);
+      @include roboto(bold, 1rem, 1.125rem);
     }
   }
 }
@@ -265,6 +240,35 @@ footer {
 // Bootstrap only (since it does not have max width, except for 100%)
 @media (min-width: 768px) {
   .mw-md-330 {
-    max-width: 330px;
+    max-width: 20.625rem;
+  }
+
+  // Similar to the one that is at the top, this does not work without
+  // !important, not even when selecting by ID. If you can prove me
+  // wrong, I will change this, otherwise please don't ask me to remove it.
+  .border-md-0 {
+    border: 0 !important;
+  }
+
+  // You can not change the text direction from Bootstrap using classes
+  // - https://gist.github.com/nurbek-ab/f5cdbdb350f418278794
+  .txt-md-left {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 767px) {
+
+  // We need to remove the sticky from the first column when we are
+  // on mobile to prevent the second column from crashing below the
+  // marging of the first.
+  #col-1 {
+    position: initial;
+  }
+
+  // For this image, in the mobile version, they use a fixed height
+  // of 170 px.
+  .s5 {
+    height: 10.625rem;
   }
 }

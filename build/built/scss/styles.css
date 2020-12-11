@@ -1,41 +1,20 @@
 body {
   font: .8125rem/1.125rem Arial,Helvetica,sans-serif
 }
-.left-nav {
-  font: bold 13px/18px "Roboto Condensed",sans-serif
-}
-.nav2 {
-  font-size: 18px;
-  font-weight: 700
-}
-.nav3 {
-  font-size: 15px;
-  font-weight: 700
-}
-.sear {
-  font-size: 17px
-}
 img {
   width: 100%;
   height: auto;
-  display: cover
-}
-.logo {
-  font: bold 28px/0 Kadwa,serif
-}
-@media screen and (min-width:992px) {
-  .logo {
-    font: bold 56px/0 Kadwa,serif
-  }
+  -o-object-fit: cover;
+     object-fit: cover
 }
 .logo-text {
   font: bold 1.75rem/0 Kadwa,serif;
-  letter-spacing: -3px
+  letter-spacing: -.1875rem
 }
 .logo-simple {
   background-color: #f72210;
-  width: 30px;
-  height: 30px
+  width: 1.875rem;
+  height: 1.875rem
 }
 section .debate-vs div,
 section .subscribe-block-image1,
@@ -51,17 +30,22 @@ section form button {
 .text-main {
   color: #f72210
 }
-.sticky-column {
-  z-index: 0!important;
-  top: 42px
+#col-1,
+#col-2,
+#col-3 {
+  z-index: 0;
+  top: 2.875rem
 }
+.navb,
 nav {
   background-color: #f72210
 }
-nav .subscribe {
+.navb-user {
+  font-size: 1.25rem
+}
+.navb-subscribe {
   font: bold .8125rem/1.5rem "Roboto Condensed",sans-serif;
-  background-color: #ffe400;
-  border-radius: 24%
+  background-color: #ffe400
 }
 section h1 {
   font: bold 1rem/1rem "Roboto Condensed",sans-serif
@@ -69,8 +53,7 @@ section h1 {
 section article h2 {
   font: bold 1.375rem/1.5rem "Roboto Condensed",sans-serif
 }
-section article .fc2,
-section article figcaption {
+section article .figcaption {
   font: bold 1rem/1rem "Roboto Condensed",sans-serif;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -80,7 +63,7 @@ section article figcaption {
   height: max-content;
   color: #f72210;
   opacity: .9;
-  z-index: 1!important
+  z-index: 0
 }
 section article .h1 {
   font: bold 1rem/1.1875rem "Roboto Condensed",sans-serif
@@ -93,26 +76,24 @@ section article .fc2 {
   background-color: #c2d4d7
 }
 section article .db-img {
-  width: 63px;
-  height: 63px
+  width: 4rem;
+  height: 4rem
 }
-section .debate-top {
-  border-top-width: 4px!important
-}
-section .debate-bottom {
-  border-bottom-width: 4px!important
+section #debate-bottom,
+section #debate-top {
+  border-width: .25rem!important
 }
 section .debate-vs {
-  height: 3px
+  height: .1875rem
 }
 section .debate-vs div {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   color: #d6d6d6;
   border-radius: 50%
 }
 section .form {
-  max-width: 300px
+  max-width: 18.75rem
 }
 section article form .fc2,
 section form article .fc2,
@@ -123,11 +104,11 @@ section .subscribe-block {
   font: 300 .9375rem/1.3125rem "Helvetica Neue",Helvetica,Arial,sans-serif
 }
 section .subscribe-block-images {
-  height: 227px
+  height: 14.1875rem
 }
 section .subscribe-block-images div {
   height: inherit;
-  width: 170px
+  width: 10.625rem
 }
 section .subscribe-block-image1 {
   transform: translate(-70%,-50%)
@@ -136,7 +117,7 @@ section .subscribe-block-image2 {
   transform: translate(-30%,-45%)
 }
 section .subscribe-block button {
-  font: bold 1.125rem/1.125rem "Roboto Condensed",sans-serif
+  font: bold 1rem/1.125rem "Roboto Condensed",sans-serif
 }
 footer .logo-text {
   font-size: 2.875rem
@@ -155,6 +136,20 @@ footer ul li {
 }
 @media(min-width:768px) {
   .mw-md-330 {
-    max-width: 330px
+    max-width: 20.625rem
+  }
+  .border-md-0 {
+    border: 0!important
+  }
+  .txt-md-left {
+    text-align: left!important
+  }
+}
+@media(max-width:767px) {
+  #col-1 {
+    position: initial
+  }
+  .s5 {
+    height: 10.625rem
   }
 }
