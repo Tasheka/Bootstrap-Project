@@ -30,7 +30,7 @@ This project is responsive and has 3 versions: mobile, tablet and desktop.
 👤 Tasheka Hamilton
 
 - GitHub: [@Tasheka](https://github.com/Tasheka)
-- LinkedIn: [LinkedIn](linkedin.com/in/tasheka-hamilton-43532311b)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tasheka-hamilton-43532311b/)
 
 ## 🤝 Contributing
 
