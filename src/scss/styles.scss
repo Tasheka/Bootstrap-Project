@@ -1,3 +1,7 @@
+// This CSS file is meant to help Bootstrap with some things it can
+// not do, for example, the custom fonts, the font size, some pixel
+// perfect elements, transformations and the main color of the page.
+
 $main-color: #f72210;
 $button-color: #ffe400;
 $third-color: #342;
@@ -40,8 +44,7 @@ img {
   letter-spacing: -0.1875rem;
 }
 
-// This logo is fixed size, not responsive, so don't ask to make it
-// responsive.
+// This logo is fixed size, not responsive.
 .logo-simple {
   background-color: $main-color;
   width: 1.875rem;
@@ -53,7 +56,7 @@ img {
   opacity: 0.75;
 }
 
-// Bootstrap 3 does not have transformation classess.
+// Bootstrap 4 does not have transformation classess.
 .transform-center {
   left: 50%;
   top: 50%;
@@ -70,7 +73,8 @@ img {
   color: $main-color;
 }
 
-// Bootstrap, in it's infinite wisdom...
+// Bootstrap, in it's infinite wisdom... sets the z-index of sticky
+// elements greater than the one for fixed elements (like the navbar)
 #col {
   &-1,
   &-2,
@@ -130,7 +134,7 @@ section {
       color: $main-color;
       // Bootstrap does not have opacity classes.
       opacity: 0.9;
-      // Bootstrap, in it's infinite wisdom.
+      // Bootstrap, in it's infinite wisdom... again with the z-index
       z-index: 0;
     }
 
@@ -164,16 +168,17 @@ section {
   // - https://www.codeply.com/go/ktnEeWExvh
   // - https://o7planning.org/en/12029/bootstrap-borders-tutorial
   //
-  // If you can prove me wrong, I will blindly change this, but
-  // otherwise, please don't ask me to change it without a solid
-  // alternative.
+  // If you can prove me wrong, I will take your approach and retract
+  // this comment. If you see carefully, not even using the ID
+  // selector helps. I faced this problem more than once.
   #debate-top,
   #debate-bottom {
     border-width: 0.25rem !important;
   }
 
   // This debate "VS" thing needs to be pixel perfect. Anyway, it is
-  // responisve. Don't ask to remove this code.
+  // responisve in the sense that it sticks at the middle, no matter
+  // what size the container is.
   .debate-vs {
     height: 0.1875rem;
 
@@ -203,8 +208,8 @@ section {
     }
   }
 
-  // Note that this transform is also pixel-perfect and cannot be done with
-  // Bootstrap only.
+  // This transform is also pixel-perfect and cannot be done with
+  // only Bootstrap.
   .subscribe-block {
     @include helvetica(300, 0.9375rem, 1.3125rem);
 
@@ -268,12 +273,14 @@ footer {
 
   // Similar to the one that is at the top, this does not work without
   // !important, not even when selecting by ID. If you can prove me
-  // wrong, I will change this, otherwise please don't ask me to remove it.
+  // wrong, I will retract this.
   .border-md-0 {
     border: 0 !important;
   }
 
   // You can not change the text direction from Bootstrap using classes
+  // Then, I found this gist that suggest how to do it. Also, it does
+  // not work without the !important.
   // - https://gist.github.com/nurbek-ab/f5cdbdb350f418278794
   .txt-md-left {
     text-align: left !important;
@@ -283,6 +290,8 @@ footer {
 @media (min-width: $lg) {
 
   // You can not change the text direction from Bootstrap using classes
+  // Then, I found this gist that suggest how to do it. Also, it does
+  // not work without the !important.
   // - https://gist.github.com/nurbek-ab/f5cdbdb350f418278794
   .txt-lh-left {
     text-align: left !important;
